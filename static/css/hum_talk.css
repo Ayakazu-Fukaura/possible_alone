@@ -38,7 +38,7 @@
     margin: 5px 0 0 105px;
     padding: 17px 13px;
     border-radius: 12px;
-    background: #d7ebfe;
+    background: red;
   }
   
   .says:after {
@@ -48,7 +48,7 @@
     top: 18px; 
     left: -24px;
     border: 12px solid transparent;
-    border-right: 12px solid #d7ebfe;
+    border-right: 12px solid red;
   }
   
   .says p {
