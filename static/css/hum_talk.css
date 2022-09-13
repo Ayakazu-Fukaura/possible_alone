@@ -10,7 +10,7 @@
     margin: 1.5em 0;
     overflow: hidden;
     margin-left: 0;
-    font-size: 50px;
+    font-size: 25px;
     color: #fff;
     
   }
@@ -18,7 +18,7 @@
   .balloon5 .faceicon {
     float: left;
     margin-right: -90px;
-    width: 200px;
+    width: 100px;
   }
   
   .balloon5 .faceicon img{
@@ -39,6 +39,17 @@
     padding: 17px 13px;
     border-radius: 12px;
     background: red;
+
+    opacity: 0;   /* いったん非表示 */
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+  }
+
+  .says.is-show {
+    opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
   }
   
   .says:after {
@@ -55,6 +66,13 @@
     margin: 0;
     padding: 0;
   }
+
+
+ .back {
+     margin-top: 50px;
+     margin-left: 50px;
+     padding-left: 35%;
+ }
 
 
  /* ここまでハムスターありがとうエリア */
