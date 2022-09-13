@@ -15,5 +15,10 @@ def page3():
 def page4():
     return render_template('yutoGoodjob.html')
 
+@app.route('/5')
+def page5():
+    return render_template('5.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
