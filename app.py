@@ -7,17 +7,25 @@ app = Flask(__name__)
 def index():
     return render_template('index.html',)
 
+
 @app.route('/3')
 def page3():
     return render_template('yuto③④.html')
+
 
 @app.route('/4')
 def page4():
     return render_template('yutoGoodjob.html')
 
+
 @app.route('/5')
 def page5():
     return render_template('5.html')
+
+
+@app.route('/6')
+def page6():
+    return "6pege"
 
 
 if __name__ == "__main__":
