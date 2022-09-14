@@ -23,6 +23,7 @@
     /* くの字の向き */
 }
 
+/* →の棒部分 */
 .arrow_right::after {
     /* 棒の表示設定 */
     content: "";
@@ -37,4 +38,16 @@
     /* 棒の太さ */
     background: #000;
     /* 棒の色 */
+}
+
+
+/* フェードインさせる */
+.present_box {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.present {
+    width: 100%;
 }
