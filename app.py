@@ -1,3 +1,5 @@
+from crypt import methods
+from email.mime import image
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -15,12 +17,15 @@ def page2():
 
 @app.route('/3')
 def page3():
-    return render_template('yuto③④.html')
+    taskname = "かおあらい"
+    return render_template('yuto③④.html', taskname=taskname)
+    
 
 
 @app.route('/4')
 def page4():
-    return render_template('yutoGoodjob.html')
+    tasks= "かおあらい"
+    return render_template('yutoGoodjob.html', tasks=tasks)
 
 
 @app.route('/5')

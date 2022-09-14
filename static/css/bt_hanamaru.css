@@ -36,12 +36,12 @@ body{
 /* ここは見出しエリア */
 
 .context {
-    font-size: 50px;
+    font-size: 35px;
     color: blue;
     writing-mode: vertical-rl;
     position: absolute;
     top: 20px;
-    left: 24%;
+    left: 30%;
 }
 
 .image {
@@ -114,6 +114,9 @@ body{
 	opacity: 0;
 	transform: translateY(30px);
 	transition: opacity 1.5s, transform 4s;
+    max-width: 320px;
+    position: absolute;
+    bottom: 250px;
 }.fade.active {
 	opacity: 1;
 	transform: translateY(0px);

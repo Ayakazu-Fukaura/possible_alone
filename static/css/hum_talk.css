@@ -17,15 +17,16 @@ body{
     margin: 1.5em 0;
     overflow: hidden;
     margin-left: 0;
-    font-size: 25px;
     color: #fff;
+    position: absolute;
+    bottom: 90px;
     
   }
   
   .balloon5 .faceicon {
     float: left;
     margin-right: -90px;
-    width: 100px;
+    width: 90px;
   }
   
   .balloon5 .faceicon img{
@@ -46,6 +47,7 @@ body{
     padding: 17px 13px;
     border-radius: 12px;
     background: red;
+    font-size: 14px;
 
     opacity: 0;   /* いったん非表示 */
   visibility: hidden;
@@ -73,13 +75,18 @@ body{
     margin: 0;
     padding: 0;
   }
+.back {
+    padding-left: 45%;
+    position: fixed;
+    bottom: 10px;
+}
 
-
- .back {
-     margin-top: 50px;
-     margin-left: 50px;
-     padding-left: 35%;
- }
+.goodjob {
+    color: blue;
+    position: fixed;
+    top: 320px;
+    left: 30%;
+}
 
 
  /* ここまでハムスターありがとうエリア */
