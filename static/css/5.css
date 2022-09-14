@@ -41,13 +41,47 @@
 }
 
 
+.movie_box {
+    width: 100%;
+    height: calc(185px + 100px);
+}
+
 /* フェードインさせる */
+
 .present_box {
+    position: relative;
     width: 180px;
     margin-left: auto;
     margin-right: auto;
+
+    opacity: 0;
+    /* ↓秒数はjavaにも記述 */
+    transition: 3.0s;
+    padding-top: 0px;
 }
 
-.present {
+
+.present_box.showUp {
+    opacity: 1;
+    padding-top: 100px;
+}
+
+.present,
+.himawari {
+    position: absolute;
     width: 100%;
+    transition: 2.0s;
+}
+
+.himawari {
+    opacity: 0;
+}
+
+.himawari.UP {
+    opacity: 1;
+}
+
+.present.DOWN {
+    opacity: 0;
+    transition: 1.0s;
 }
