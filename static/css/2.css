@@ -1,0 +1,11 @@
+.flowchart {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    background-color: #dd5268;
+    width: 700px;
+    height: 70px;
+    border-radius: 20px 0;
+    margin-bottom: 80px;
+    }
