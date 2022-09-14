@@ -1,5 +1,5 @@
 /*タイトルの青枠*/
-h1 {
+/*h1 {
   color: #fff;
   border: 2px dashed #fff;
   background-color: blue;
@@ -8,6 +8,41 @@ h1 {
   font-size: 27px;
   text-align:center;
   }
+*/
+
+h1 {
+	background-color: #f5d5da; /* 背景色 */
+	border-radius: 5px;
+	color: #ef858c; /* 文字色 */
+	padding: 10px 10px 10px 60px; /* 上・右・下・左の余白 */
+	position: relative;
+  font-size: 25px;
+	text-shadow: 0px 0px 10px #fff, 0px 0px 6px #fff, 0px 0px 4px #fff, 0 0 0.5px #fff; /* 文字の影 */
+}
+h1:before {
+	content: '＊*'; /*花に見せかけるためのアスタリスク*/
+	color: #fff; /* アスタリスクの色 */
+	display: inline-block;
+	font-size: 30px; /* アスタリスクの大きさ */
+	font-weight: bold;
+	margin-right: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	text-shadow: 0px 0px 3px #fff, 0px 0px 2px #fff, 0 0 0.5px #fff; /* アスタリスク周りの影 */
+}
+h1:after {
+	border-bottom: 2px dotted #fff; /* 下線 */
+	content: '';
+	position: absolute;
+	bottom: 3px;
+	left: 3px;
+	right: 3px;
+}
 
 /*日時、曜日の黒板*/
 .kokuban {
@@ -99,3 +134,20 @@ h1 {
   padding: 0;
 }
 
+/*ボタン*/
+.button{
+  background:#34d937;
+  padding:1em 1em;
+  border:white 2px solid;
+  text-decoration:none;
+  text-align: center;
+  color:whitesmoke;
+  font-size:1.5em;
+  font-family:sans-serif;
+}
+
+.block{
+  display:block;
+  width:150px;
+  margin:0 auto;
+}
