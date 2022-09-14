@@ -1,0 +1,101 @@
+/*タイトルの青枠*/
+h1 {
+  color: #fff;
+  border: 2px dashed #fff;
+  background-color: blue;
+  box-shadow: 0px 0px 0px 10px #4989ff;
+  padding: 10px;
+  font-size: 27px;
+  text-align:center;
+  }
+
+/*日時、曜日の黒板*/
+.kokuban {
+  position: relative;
+  margin: 2em auto;
+  padding: 2.2em 1em 1em;
+  width: 80%;
+  background-color: #006633;
+  color: #fff;
+  border: 8px solid #b2771f;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+  line-height: 2em;
+  }
+  
+  .kokuban::before,
+  .kokuban::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  } 
+  
+  .kokuban::before {
+  right: 10px;
+  border: solid 3px #fff;
+  width: 20px; 
+  border-radius: 3px 2px 0 2px;
+  }
+  
+  .kokuban::after {
+  right: 40px;
+  border: solid 3px #ffff6b;
+  width: 15px; 
+  border-radius: 8px 5px 2px 5px;
+  }
+  
+  .title {
+  position: absolute;
+  top: .8em;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #ffff6b;
+  }
+/*ハムスターの吹き出しエリア*/
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 87px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7ebfe;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #d7ebfe;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
