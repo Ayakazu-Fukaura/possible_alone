@@ -3,9 +3,14 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return render_template('index.html',)
+@app.route('/1')
+def page1():
+    return render_template('komatsu1.html',)
+
+@app.route('/2')
+def page2():
+    return render_template('komatsu2.html',)
+
 
 @app.route('/3')
 def page3():
