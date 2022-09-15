@@ -4,3 +4,6 @@ $(function(){
     var crrent_task = JSON.parse(storage.getItem("crrent_task"));
         $("h1").text(tasks[crrent_task])
 })
+
+
+
