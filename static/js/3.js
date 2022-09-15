@@ -1,9 +1,6 @@
 $(function(){
     viewStorage()
-    var tasks = storage.getItem("tasks");
-        $("h1").text(tasks[0])
-
-        $('.btn').on('click', function () {
-            $("h1").getItem("tasks[1]")
-          });
+    var tasks = JSON.parse(storage.getItem("tasks"));
+    var crrent_task = JSON.parse(storage.getItem("crrent_task"));
+        $("h1").text(tasks[crrent_task])
 })
