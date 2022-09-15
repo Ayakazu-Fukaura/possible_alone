@@ -1,11 +1,35 @@
-.flowchart {
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 40px;
-    background-color: #dd5268;
-    width: 700px;
-    height: 70px;
-    border-radius: 20px 0;
-    margin-bottom: 80px;
+/*タイトルの枠*/
+
+.title3 {
+    border-bottom: 3px solid #bc8f8f;
+    text-align: left;
+    background-color: #ffe4e1;
+    font-size: 30px;
+    color: #000;
+    margin: 0px;
+    padding: 15px 5px 5px 15px;
+    width:400px;
     }
+
+/*やってみようボタン*/
+    .Button-style {
+        font-size: 25px;
+        display: inline-block;
+        padding: 0.5em 1em 0.3em;
+        margin: 0 45px 0 45px;
+        color: #0011ff;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(
+          -45deg,
+          #ddeeff 25%,
+          #c6e6fb 25%,
+          #c6e6fb 50%,
+          #ddeeff 50%,
+          #ddeeff 75%,
+          #c6e6fb 75%,
+          #c6e6fb
+        );
+        background-size: 10px 10px;
+        cursor: pointer;
+      }

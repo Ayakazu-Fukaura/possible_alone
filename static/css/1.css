@@ -84,6 +84,22 @@ h1:after {
   overflow: hidden;
 }
 
+/*.balloon5 {
+  border-radius: 90% 5% 90% 5% / 10% 90% 10% 90%;
+}
+.balloon5::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(10deg);
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #fff;
+}
+*/
+
 @keyframes balloonAnime {
   0% { transform: scale(1); }
   10% { transform: scale(1.05); }
@@ -100,10 +116,11 @@ h1:after {
 }
 
 .balloon5 .faceicon img{
-  width: 100%;
+  width: 125%;
   height: auto;
-  border: solid 3px #d7ebfe;
+ /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
   border-radius: 50%;
+  
 }
 
 .balloon5 .chatting {
@@ -135,22 +152,12 @@ h1:after {
 }
 
 
-/* 吹き出し（左）用 
-.balloon5 {
-  transform-origin: left top;
-  animation: balloonAnime 3s ease-out 0s infinite normal both;
-}*/
-
-
-
-
-
 /*ボタン*/
 .Button-style {
   font-size: 30px;
   display: inline-block;
   padding: 0.5em 1em 0.3em;
-  margin: 0 0 0 80px;
+  margin: 0 45px 0 45px;
   color: #0011ff;
   border: none;
   border-radius: 5px;
