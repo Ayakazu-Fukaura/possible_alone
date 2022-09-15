@@ -1,4 +1,3 @@
-from crypt import methods
 from email.mime import image
 from flask import Flask, render_template
 
@@ -11,7 +10,7 @@ def page1():
 
 @app.route('/2')
 def page2():
-    return render_template('komatsu2.html',)
+    return render_template('2.html',)
 
 
 
