@@ -18,32 +18,7 @@ if (typeof sessionStorage === 'undefined') {
     }
 
 
-    function setlocalStorage() {
-        var img = new Image();
-        img.src = "/static/img/toilet.png"
-
-        var img = new Image();
-        img.src = "/static/img/kao.png"
-        
-        var img = new Image();
-        img.src = "/static/img/gohan.png"
-
-        var img = new Image();
-        img.src = "/static/img/kaban.png"
-
-        var img = new Image();
-        img.src = "/static/img/hamigaki.png"
-
-
-        img.load = function() {
-            var canvas = document.createElement('canvas');
-            document.body.appendChild(canvas);
-            var context = canvas.getContext('2d');
-            context.drawImage(img, 0, 0);
-            var data = context.getImageData(x, y, img.width, img.height).data;
-            localStorage.setItem('image', JSON.stringify(data)); // save image data
-        }
-    }
+   
 
     // （3）sessionStorageからのデータの取得と表示
     function viewStorage() {
