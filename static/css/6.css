@@ -14,14 +14,14 @@
     position: absolute;
 } */
 
-.kyoton {
+.hum {
     /* position: absolute; */
     z-index: 0;
     width: 180px;
-
+    transition: 1.0s;
 }
 
-.movie_box button {
+#button {
     z-index: 10;
     position: absolute;
     width: 150px;
@@ -32,7 +32,13 @@
     margin-bottom: 70px;
 }
 
+#button.DOWN {
+    opacity: 0;
+    transition: 1.0s;
+}
+
 .himawari {
+    opacity: 0;
     position: absolute;
     width: 180px;
     top: 0;
@@ -40,5 +46,10 @@
     left: 0;
     right: 0;
     margin: auto;
-    margin-bottom: 25px
+    margin-bottom: 20px
+}
+
+.himawari.UP {
+    opacity: 1;
+    transition: 1.0s;
 }
