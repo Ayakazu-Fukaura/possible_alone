@@ -1,7 +1,4 @@
-$(function () {
 
-    setlocalStorage();
-});
 
 function showClock1() {
     var nowTime = new Date();
