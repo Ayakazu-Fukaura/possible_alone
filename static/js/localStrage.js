@@ -51,7 +51,7 @@ if (typeof sessionStorage === 'undefined') {
     function setlocalStorage() {
         console.log("初期taskをセット")
         var tasks = []
-        tasks = ["トイレ", "顔洗い", "ごはん", "かばん準備", "はみがき", "トイレ"];
+        tasks = ["トイレ", "かおあらい", "ごはん", "かばん準備", "はみがき", "トイレ"];
         // 値の入力
         storage.setItem("tasks", JSON.stringify(tasks));
         viewStorage();
