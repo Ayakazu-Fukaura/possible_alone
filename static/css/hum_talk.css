@@ -75,7 +75,7 @@ body{
     margin: 0;
     padding: 0;
   }
-.back {
+#back {
     padding-left: 45%;
     position: fixed;
     bottom: 10px;

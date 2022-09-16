@@ -16,15 +16,13 @@ def page2():
 
 @app.route('/3')
 def page3():
-    taskname = "かおあらい"
-    return render_template('yuto③④.html', taskname=taskname)
+    return render_template('yuto③④.html')
     
 
 
 @app.route('/4')
 def page4():
-    tasks= "かおあらい"
-    return render_template('yutoGoodjob.html', tasks=tasks)
+    return render_template('yutoGoodjob.html')
 
 
 @app.route('/5')

@@ -37,7 +37,7 @@ h1:after {
 .kokuban {
   position: relative;
   margin: 1em auto;
-  padding: 2.2em 1em 1em;
+  padding: 4em 1em 1em;
   width: 80%;
   background-color: #006633;
   color: #fff;
@@ -45,6 +45,7 @@ h1:after {
   border-radius: 3px;
   box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
   line-height: 2em;
+  font-size: 17px;
   }
   
   .kokuban::before,
@@ -135,7 +136,7 @@ h1:after {
   padding: 0;
 }
 
-/* solid015 */
+/* ボタン */
 .button_solid015 {
   text-align: center;
 }
