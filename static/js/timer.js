@@ -125,6 +125,13 @@ window.addEventListener('scroll', showElementAnimation);
 
   // ここまで
 
+
+  // ５ばんへGO!ボタンをゆっくり出すエリア
+
+  
+
+  // ここまで
+
 // ここまで
 
 

@@ -11,3 +11,6 @@ var toilet_task = -1
 storage.setItem("toilet_task", JSON.stringify(toilet_task));
 console.log(toilet_task)
 });
+
+
+

@@ -18,3 +18,7 @@ storage.setItem("toilet_task", JSON.stringify(toilet_task));
         $(".says").text(tasks[toilet_task] + "してくれてありがとう!")
         console.log(toilet_task)
 })
+
+
+
+
