@@ -8,16 +8,15 @@ app = Flask(__name__)
 def page1():
     return render_template('komatsu1.html')
 
+
 @app.route('/2')
 def page2():
     return render_template('2.html')
 
 
-
 @app.route('/3')
 def page3():
     return render_template('yuto③④.html')
-    
 
 
 @app.route('/4')
@@ -32,9 +31,7 @@ def page5():
 
 @app.route('/6')
 def page6():
-    return "6pege"
-
-
+    return render_template('6.html')
 
 
 if __name__ == "__main__":
