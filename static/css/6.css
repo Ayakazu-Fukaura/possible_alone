@@ -1,0 +1,55 @@
+.movie_box {
+    width: 100%;
+    height: calc(185px + 100px);
+    /*↑ 5.cssと共通 */
+    position: relative;
+    text-align: center;
+}
+
+/* .hum_box {
+    width: 180px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+} */
+
+.hum {
+    /* position: absolute; */
+    z-index: 0;
+    width: 180px;
+    transition: 1.0s;
+}
+
+#button {
+    z-index: 10;
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+#button.DOWN {
+    opacity: 0;
+    transition: 1.0s;
+}
+
+.himawari {
+    opacity: 0;
+    position: absolute;
+    width: 180px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+.himawari.UP {
+    opacity: 1;
+    transition: 1.0s;
+}

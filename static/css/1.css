@@ -81,7 +81,7 @@ h1:after {
   transform-origin: left top;
   animation: balloonAnime 3s ease-out 0s infinite normal both;
   width: 100%;
-  margin: 1.5em 0 0 0;
+  margin: 1.5em 0 0 1.5em;
   overflow: hidden;
 }
 
@@ -104,7 +104,7 @@ h1:after {
   width: 125%;
   height: auto;
  /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
-  border-radius: 50%;
+ /* border-radius: 50%;*/
   
 }
 
@@ -118,7 +118,7 @@ h1:after {
   margin: 5px 0 0 105px;
   padding: 17px 13px;
   border-radius: 12px;
-  background: #f9fac5;
+  background: #fad5e6;
 }
 
 .says:after {
@@ -128,7 +128,7 @@ h1:after {
   top: 18px; 
   left: -24px;
   border: 12px solid transparent;
-  border-right: 12px solid #f9fac5;
+  border-right: 12px solid #fad5e6;
 }
 
 .says p {
