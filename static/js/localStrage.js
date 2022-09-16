@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 // （1）Web Storageの実装確認
 if (typeof sessionStorage === 'undefined') {
@@ -37,7 +37,7 @@ if (typeof sessionStorage === 'undefined') {
 }
 
 
-=======
+
 
 // （1）Web Storageの実装確認
 if (typeof sessionStorage === 'undefined') {
@@ -76,4 +76,4 @@ if (typeof sessionStorage === 'undefined') {
 }
 
 
->>>>>>> 535ffed8f7d1908a8dcc439b01ec43d78c6e63c9
+
