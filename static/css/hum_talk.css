@@ -75,11 +75,12 @@ body{
     margin: 0;
     padding: 0;
   }
-#back {
+.btn {
     padding-left: 45%;
     position: fixed;
     bottom: 10px;
 }
+
 
 .goodjob {
     color: blue;

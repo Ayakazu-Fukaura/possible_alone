@@ -18,7 +18,7 @@ viewStorage()
 ---
 3.tasks が変数として欲しいとき
 ```javascript:タイトル
-var tasks = storage.getItem("tasks");
+var tasks = JSON.parse(storage.getItem("tasks"));
 ```
 これでタスクの内容が初期値なら  
 >tasks = ["トイレ", "顔洗い", "ごはん", "かばん準備", "はみがき", "トイレ"]  

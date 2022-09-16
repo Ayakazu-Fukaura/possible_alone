@@ -1,5 +1,9 @@
 $(function(){
-    tasks = ['トイレ', 'かおあらい', 'ごはん', 'かばんじゅんび', 'はみがき', 'トイレ']
-    $("h1").text(tasks[5])
-
+    viewStorage()
+    var tasks = JSON.parse(storage.getItem("tasks"));
+    var crrent_task = JSON.parse(storage.getItem("crrent_task"));
+        $("h1").text(tasks[crrent_task])
 })
+
+
+

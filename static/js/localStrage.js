@@ -10,15 +10,16 @@ if (typeof sessionStorage === 'undefined') {
     // （2）sessionStorageへの格納
     function setlocalStorage() {
         console.log("初期taskをセット")
-        var tasks = ["トイレ", "顔洗い", "ごはん", "かばん準備", "はみがき", "トイレ"];
+        var tasks = []
+        tasks = ["トイレ", "顔洗い", "ごはん", "かばん準備", "はみがき", "トイレ"];
         // 値の入力
-        storage.setItem("tasks", tasks);
+        storage.setItem("tasks", JSON.stringify(tasks));
         viewStorage();
     }
 
     // （3）sessionStorageからのデータの取得と表示
     function viewStorage() {
-        var tasks = storage.getItem("tasks");
+        var tasks = JSON.parse(storage.getItem("tasks"));
         console.log("リストを表示します：" + tasks);
     }
 
