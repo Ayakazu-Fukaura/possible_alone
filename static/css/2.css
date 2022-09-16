@@ -12,8 +12,9 @@
     }
 
 .content {
-    text-align: center;
+    text-align: left;
 }
+
 
 /*ハムスターの吹き出しエリア*/
 .balloon5 {
@@ -54,10 +55,10 @@
   .says {
     display: inline-block;
     position: relative; 
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 100px;
     padding: 17px 13px;
     border-radius: 12px;
-    background: #f9fac5;
+    background: #fad5e6;
   }
   
   .says:after {
@@ -67,7 +68,7 @@
     top: 18px; 
     left: -24px;
     border: 12px solid transparent;
-    border-right: 12px solid #f9fac5;
+    border-right: 12px solid #fad5e6;
   }
   
   .says p {
