@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 @app.route('/1')
 def page1():
-    return render_template('komatsu1.html',)
+    return render_template('komatsu1.html')
 
 @app.route('/2')
 def page2():
-    return render_template('2.html',)
+    return render_template('2.html')
 
 
 
