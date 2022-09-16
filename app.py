@@ -33,6 +33,10 @@ def page5():
 def page6():
     return render_template('6.html')
 
+@app.route('/7')
+def page7():
+    return render_template('7.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
