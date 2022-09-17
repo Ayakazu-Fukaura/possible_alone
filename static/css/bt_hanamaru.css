@@ -70,15 +70,21 @@ body{
 
 }
 
+.goodjob{
+  font-size: x-large;
+  margin-left: -70px;
+}
+
 /* solid015 */
 .button_solid015 {
   text-align: center;
+  padding-top: 490px;  /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
   
 }
 .button_solid015 p {
   margin-bottom: 5px;
   font-weight: 600;
-  color: #10a134;
+  color: #f52731;
   letter-spacing: 0.04rem;
   display: inline-block;
   position: relative;
@@ -91,7 +97,7 @@ body{
   width: 20px;
   height: 3px;
   border-radius: 5px;
-  background-color: #10a134;
+  background-color: #f52731;
   content: "";
 }
 .button_solid015 p:before {
@@ -115,9 +121,10 @@ body{
   color: #FFF;
   transition: 0.3s ease-in-out;
   font-weight: 600;
-  background: #10a134;
+  background: #f52731;
   filter: drop-shadow(0px 2px 4px #ccc);
   border-radius: 50px;
+  font-size: x-large;
 }
 .button_solid015 a:hover {
   transform: translateY(-2px);
@@ -128,7 +135,6 @@ body{
   top: 50%;
   right: 20px;
   transition: 0.2s ease-in-out;
-  content: "\f0da";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   transform: translateY(-54%);
@@ -158,14 +164,14 @@ body{
 
   .timer {
     position: absolute;
-    bottom: 70px;
+    bottom: 150px;  /*ほんとは嫌だけどpxサイズ指定でむりやり下げた*/
     left: 7px;
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .timer2 {
     position: absolute;
-    bottom: 1.5em;
+    bottom: 120px;  /*ほんとは嫌だけどpxサイズ指定でむりやり下げた*/
     left: 97px;
   }
   
