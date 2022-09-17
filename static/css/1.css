@@ -37,7 +37,7 @@ h1:after {
 .kokuban {
   position: relative;
   margin: 1em auto;
-  padding: 4em 1em 1em;
+  padding: 4em 1em 0;
   width: 80%;
   background-color: #006633;
   color: #fff;
@@ -81,7 +81,7 @@ h1:after {
   transform-origin: left top;
   animation: balloonAnime 3s ease-out 0s infinite normal both;
   width: 100%;
-  margin: 1.5em 0 0 1.5em;
+  margin: 0 0 0 1.5em;
   overflow: hidden;
 }
 
@@ -180,8 +180,9 @@ h1:after {
   transition: 0.3s ease-in-out;
   font-weight: 600;
   background: #10a134;
-  filter: drop-shadow(0px 2px 4px #ccc);
+  filter: drop-shadow(0px 2px 4px #ccc); 
   border-radius: 50px;
+  font-size: x-large;
 }
 .button_solid015 a:hover {
   transform: translateY(-2px);
@@ -192,7 +193,6 @@ h1:after {
   top: 50%;
   right: 20px;
   transition: 0.2s ease-in-out;
-  content: "\f0da";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   transform: translateY(-54%);
