@@ -1,3 +1,5 @@
+
+
 .arrow_right {
     position: relative;
     padding-left: 25px;
@@ -40,6 +42,59 @@
     /* 棒の色 */
 }
 
+/* タイトルのリボン枠 */
+.all_clear{
+    position: relative;
+    padding:3px 0;
+    color:#ffffff;
+    zoom: 1;
+    background: red;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0,0.3);
+    box-shadow:0 1px 3px rgba(0,0,0,0.3);
+  }
+  .all_clear:before,
+  .all_clear:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    top:13px;
+    height: 0;
+    width: 0;
+    border: 26px solid red;
+    z-index:-1;
+  }
+  .all_clear:before {
+    right: -42px;
+    border-right-color: transparent;
+  }
+  .all_clear:after {
+    left: -42px;
+    border-left-color: transparent;
+  }
+  .all_clear2:before,.sample2:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid #ba040d;
+  }
+  .all_clear2:before {
+    right: 0;
+    border-left: 5px solid #ba040d;
+  }
+  .all_clear2:after {
+    left: 0;
+    border-right: 5px solid #ba040d;
+  }
+  .all_clear span{
+    display:block;
+    border-top:1px dashed #fff;
+    border-bottom:1px dashed #fff;
+    padding:10px;
+  }
 
 .movie_box {
     width: 100%;
@@ -85,3 +140,96 @@
     opacity: 0;
     transition: 1.0s;
 }
+
+/*ハムスターの吹き出しエリア*/
+.balloon5 {
+    transform-origin: left top;
+    animation: balloonAnime 3s ease-out 0s infinite normal both;
+    width: 100%;
+    margin: 0 0 0 1.5em;
+    overflow: hidden;
+  }
+  
+  @keyframes balloonAnime {
+        /*ふわふわゆれる 
+        0% {
+          transform:translate(0, 0) rotate(-7deg);
+        }
+        50% {
+          transform:translate(0, -7px) rotate(0deg);
+        }
+        100% {
+          transform:translate(0, 0) rotate(7deg);
+        } */
+
+        /* ぽよよんとゆれる */
+         0%, 40% {
+            transform: skew(0deg, 0deg);
+          }
+          5% {
+            transform: skew(5deg, 5deg);
+          }
+          10% {
+            transform: skew(-4deg, -4deg);
+          }
+          15% {
+            transform: skew(3deg, 3deg);
+          }
+          20% {
+            transform: skew(-2deg, -2deg);
+          }
+          25% {
+            transform: skew(1deg, 1deg);
+          }
+          30% {
+            transform: skew(-0.6deg, -0.6deg);
+          }
+          35% {
+            transform: skew(0.3deg, 0.3deg);
+          } 
+    
+    
+  }
+  
+  .balloon5 .faceicon {
+    float: left;
+    margin-right: -90px;
+    width: 87px;
+  }
+  
+  .balloon5 .faceicon img{
+    width: 125%;
+    height: auto;
+   /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
+   /* border-radius: 50%;*/
+    
+  }
+  
+  .balloon5 .chatting {
+    width: 100%;
+  }
+  
+  .says {
+    display: inline-block;
+    position: relative; 
+    margin: 5px 0 0 105px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #fad5e6;
+  }
+  
+  .says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px; 
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid #fad5e6;
+  }
+  
+  .says p {
+    margin: 0;
+    padding: 0;
+  }
+  
