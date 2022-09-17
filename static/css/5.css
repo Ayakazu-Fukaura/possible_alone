@@ -1,46 +1,92 @@
 
-
-.arrow_right {
+/* .arrow_right {
     position: relative;
     padding-left: 25px;
-}
+    
+    
+} */
 
-.arrow_right::before {
+/* えさをあげようの枠 */
+.btn-flat-vertical-border {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1em 1em;
+    margin-left: 25px;
+    text-decoration: none;
+    border-left: solid 8px #fc05aa;
+    border-right: solid 8px #fc05aa;
+    color:#f70576;
+    background: #fcdcf6;
+    transition: .4s;
+  }
+  
+  .btn-flat-vertical-border:hover {
+    background: #ccf7b0;
+    color: green;
+    border-left: solid 8px #18fa07;
+    border-right: solid 8px #18fa07;
+  }
+
+/* .arrow_right{ */
+    /* position: relative;
+    display: inline-block;
+    padding: 15px 20px 15px 40px;
+    color: white;
+    border-radius: 35px 0 0 35px;
+    background: red;
+    margin-left: 20px;
+}
+.center{
+  text-align: center;
+}
+.arrow_right:before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+} */
+ /* .arrow_right::before {  */
     /* くの字の表示設定 */
-    content: "";
+    /* content: "";
     margin: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 2px;
-    width: 13px;
+    width: 13px; */
     /* くの字を山なりに見た時、左側の長さ */
-    height: 13px;
+    /* height: 13px; */
     /* くの字を山なりに見た時、右側の長さ */
-    border-top: 3px solid #000;
+    /* border-top: 3px solid #000; */
     /* くの字を山なりに見た時、左側の太さと色 */
-    border-right: 3px solid #000;
+    /* border-right: 3px solid #000; */
     /* くの字を山なりに見た時、右側の太さと色 */
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     /* くの字の向き */
-}
+/* } */
 
 /* →の棒部分 */
-.arrow_right::after {
+/* .arrow_right::after { */
     /* 棒の表示設定 */
-    content: "";
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 1px;
-    width: 18px;
+    /* content: ""; */
+    /* margin: auto; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* left: 1px; */
+    /* width: 18px; */
     /* 棒の長さ */
-    height: 3px;
+    /* height: 3px; */
     /* 棒の太さ */
-    background: #000;
+    /* background: #000; */
     /* 棒の色 */
-}
+/* }  */
 
 /* タイトルのリボン枠 */
 .all_clear{
@@ -95,6 +141,8 @@
     border-bottom:1px dashed #fff;
     padding:10px;
   }
+
+  /*リボン枠ここまで  */
 
 .movie_box {
     width: 100%;
@@ -232,4 +280,28 @@
     margin: 0;
     padding: 0;
   }
-  
+/* ハムスターエリアここまで */
+
+
+/* .arrow_right{
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px 15px 40px;
+    color: #ffffff;
+    border-radius: 35px 0 0 35px;
+    background: #85f1ec;
+}
+.arrow_right{
+  text-align: center;
+}
+.arrow_right:before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+} */
