@@ -5,11 +5,13 @@ $(function() {
        $(".omikuji_name").html("大吉が出ました");
        $(".omikuji_text").html("大吉が出ました！おめでとうございます！");
        $(".omikuji_img").attr("src","/static/img/daikiti.png");
+       
    }
        if(cont == 2){
        $(".omikuji_name").html("中吉が出ました");
        $(".omikuji_text").html("中吉が出ました！やったね！");
        $(".omikuji_img").attr("src","/static/img/tyukiti.png");
+       
    }
        if(cont == 3){
        $(".omikuji_name").html("小吉が出ました");
@@ -29,7 +31,15 @@ $(function() {
        });
 
 
-       
+       function load_effect() {
+        var element = document.getElementsByClassName('omikuji_img');
+        if(!element) return; // 要素がない場合は終了
+        
+        for(var i = 0; i < element.length; i++) { 
+          element[i].classList.add('is-show');
+        }
+      }
+      setTimeout(load_effect, 600); // 600ミリ秒経過後に実行
 
 
        });
