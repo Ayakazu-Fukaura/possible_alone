@@ -73,11 +73,33 @@
 
   .omikuji_img {
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left: 7%;
   }
 
 /* ここまで */
 
+/* トップページへ戻るボタン */
+
+
+#page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
+
+/* ここまで */
 
 

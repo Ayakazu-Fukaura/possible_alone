@@ -27,6 +27,11 @@ $(function() {
        $(".omiguji_btn").on("click",function () {
            omikuji();
        });
+
+
+       
+
+
        });
 
 
