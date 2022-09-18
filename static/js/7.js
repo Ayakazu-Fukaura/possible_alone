@@ -2,7 +2,7 @@ $(function() {
     function omikuji() {
      const cont = Math.ceil(Math.random()*4);
      if(cont == 1){
-       $(".omikuji_name").html("大吉が出ました");
+       $(".omikuji_name").html("楽しい１日が必ず来ます！");
        $(".omikuji_text").html("末吉と思いきや...? 大吉でした〜！！");
        $(".omikuji_img").attr("src","/static/img/daikiti.png");
        $('.omikuji_img').attr('src', '/static/img/suekiti.png')
