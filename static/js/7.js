@@ -4,22 +4,22 @@ $(function() {
      if(cont == 1){
        $(".omikuji_name").html("大吉が出ました");
        $(".omikuji_text").html("大吉が出ました！おめでとうございます！");
-       $(".omikuji_img").attr("src","/static/img/byebye.png");
+       $(".omikuji_img").attr("src","/static/img/daikiti.png");
    }
        if(cont == 2){
        $(".omikuji_name").html("中吉が出ました");
        $(".omikuji_text").html("中吉が出ました！やったね！");
-       $(".omikuji_img").attr("src","/static/img/byebye_ham.png");
+       $(".omikuji_img").attr("src","/static/img/tyukiti.png");
    }
        if(cont == 3){
        $(".omikuji_name").html("小吉が出ました");
        $(".omikuji_text").html("小吉が出ました！もうひとふんばり！");
-       $(".omikuji_img").attr("src","/static/img/greenman2.png");
+       $(".omikuji_img").attr("src","/static/img/syokiti.png");
    }
        if(cont == 4){
        $(".omikuji_name").html("末吉が出ました");
        $(".omikuji_text").html("末吉が出ました！もうひとふんばり！");
-       $(".omikuji_img").attr("src","/static/img/busutto_ham.png");
+       $(".omikuji_img").attr("src","/static/img/suekiti.png");
    }
     }
    

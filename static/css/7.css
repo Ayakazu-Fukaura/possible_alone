@@ -2,7 +2,82 @@
 
 
 
+/* h１の見出し部分のCSS */
+.name {
+    background-color: #f5d5da; /* 背景色 */
+	border-radius: 5px;
+	color: #ef858c; /* 文字色 */
+	padding: 15px 10px 15px 60px; /* 上・右・下・左の余白 */
+	position: relative;
+  font-size: 25px;
+	text-shadow: 0px 0px 10px #fff, 0px 0px 6px #fff, 0px 0px 4px #fff, 0 0 0.5px #fff; /* 文字の影 */
+}
+.name::before {
+    content: '＊*'; /*花に見せかけるためのアスタリスク*/
+	color: #fff; /* アスタリスクの色 */
+	display: inline-block;
+	font-size: 30px; /* アスタリスクの大きさ */
+	font-weight: bold;
+	margin-right: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	text-shadow: 0px 0px 3px #fff, 0px 0px 2px #fff, 0 0 0.5px #fff; /* アスタリスク周りの影 */
+}
+.name::after {
+    border-bottom: 2px dotted #fff; /* 下線 */
+	content: '';
+	position: absolute;
+	bottom: 3px;
+	left: 3px;
+	right: 3px;
+}
+/* ここまで */
 
+
+/* おみくじのcss */
+
+.omiguji_btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    position:absolute;
+    left: 14%;
+    bottom: 70%;
+  }
+  .omiguji_btn:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+
+  .omikuji_name {
+    position: absolute;
+    bottom: 60%;
+    right: 1%;
+  }
+
+  .omikuji_text {
+    position: absolute;
+    bottom: 55%;
+  }
+
+  .omikuji_img {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+  }
+
+/* ここまで */
 
 
 
