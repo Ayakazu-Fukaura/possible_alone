@@ -3,15 +3,19 @@ $(function() {
      const cont = Math.ceil(Math.random()*4);
      if(cont == 1){
        $(".omikuji_name").html("大吉が出ました");
-       $(".omikuji_text").html("大吉が出ました！おめでとうございます！");
+       $(".omikuji_text").html("末吉と思いきや...? 大吉でした〜！！");
        $(".omikuji_img").attr("src","/static/img/daikiti.png");
+       $('.omikuji_img').attr('src', '/static/img/suekiti.png')
+    setTimeout(function () {
+        $('.omikuji_img').attr('src', '/static/img/daikiti.png')
+    }, 1000);
        
    }
        if(cont == 2){
        $(".omikuji_name").html("中吉が出ました");
        $(".omikuji_text").html("中吉が出ました！やったね！");
        $(".omikuji_img").attr("src","/static/img/tyukiti.png");
-       
+    
    }
        if(cont == 3){
        $(".omikuji_name").html("小吉が出ました");
@@ -41,8 +45,11 @@ $(function() {
       }
       setTimeout(load_effect, 600); // 600ミリ秒経過後に実行
 
+      $('#page-top').fadeIn(25000);
+
 
        });
+
 
 
 
