@@ -1,3 +1,4 @@
+
 /*=============
 .bg_pattern背景
 ==============*/
@@ -15,7 +16,7 @@
 .Polka {
   background-image: radial-gradient(#ffc107 2px, #ffffff 2px);
   background-size: 20px 20px;
-}
+} 
 
 /*=============
 base
@@ -31,10 +32,10 @@ body {
 }
 * {
   box-sizing: border-box;
-}
+} 
 
 
-._a a {
+ ._a a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +64,7 @@ body {
 ._a a:hover {
   color: #ffffff;
   background-position: -100% 0;
-}
+} 
 
 /*タイトルの枠*/
 h1 {
