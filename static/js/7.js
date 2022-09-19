@@ -43,9 +43,9 @@ $(function() {
           element[i].classList.add('is-show');
         }
       }
-      setTimeout(load_effect, 600); // 600ミリ秒経過後に実行
+      setTimeout(load_effect, 1000); // 600ミリ秒経過後に実行
 
-      $('#page-top').fadeIn(25000);
+      $('#page-top').fadeIn(50000);
 
 
        });
