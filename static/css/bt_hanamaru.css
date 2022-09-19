@@ -32,6 +32,17 @@ body{
     background-color: white;
 
 }
+/* 背景 */
+
+
+@keyframes colorchangeanimation-bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
 
 /* ここは見出しエリア */
 
