@@ -2,7 +2,7 @@ $(function() {
     function omikuji() {
      const cont = Math.ceil(Math.random()*4);
      if(cont == 1){
-       $(".omikuji_name").html("楽しい１日が必ず来ます！");
+       $(".omikuji_name").html("楽しい１日が ぜったいきます！");
        $(".omikuji_text").html("末吉と思いきや...? 大吉でした〜！！");
        $(".omikuji_img").attr("src","/static/img/daikiti.png");
        $('.omikuji_img').attr('src', '/static/img/suekiti.png')
@@ -12,19 +12,19 @@ $(function() {
        
    }
        if(cont == 2){
-       $(".omikuji_name").html("中吉が出ました");
-       $(".omikuji_text").html("中吉が出ました！やったね！");
+       $(".omikuji_name").html("きぶんがいい １日になりそう！");
+       $(".omikuji_text").html("中吉がでました！やったね！");
        $(".omikuji_img").attr("src","/static/img/tyukiti.png");
     
    }
        if(cont == 3){
-       $(".omikuji_name").html("小吉が出ました");
-       $(".omikuji_text").html("小吉が出ました！もうひとふんばり！");
+       $(".omikuji_name").html("学校ついたら いいことあるかも！");
+       $(".omikuji_text").html("小吉がでました！ラッキー！");
        $(".omikuji_img").attr("src","/static/img/syokiti.png");
    }
        if(cont == 4){
-       $(".omikuji_name").html("末吉が出ました");
-       $(".omikuji_text").html("末吉が出ました！もうひとふんばり！");
+       $(".omikuji_name").html("コツコツやれば だいじょうぶ！");
+       $(".omikuji_text").html("末吉がでました！がんばろう！");
        $(".omikuji_img").attr("src","/static/img/suekiti.png");
    }
     }

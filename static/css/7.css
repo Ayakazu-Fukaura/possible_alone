@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-
+/*  */
 
 /* h１の見出し部分のCSS */
 .name {
@@ -45,9 +45,9 @@
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
+    background: red;/*ボタン色*/
     color: #FFF;
-    border-bottom: solid 4px #627295;
+    border-bottom: solid 6px palevioletred;
     border-radius: 3px;
     position:absolute;
     left: 10%;
@@ -63,18 +63,21 @@
   .omikuji_name {
     position: absolute;
     bottom: 60%;
-    left: 1%;
+    left: 3%;
+    color: darkred;
   }
 
   .omikuji_text {
     position: absolute;
     bottom: 55%;
+    color: brown;
+    
   }
 
   .omikuji_img {
     position: absolute;
     bottom: 12%;
-    left: 7%;opacity: 0;
+    left: 12%;opacity: 0;
     visibility: hidden;
     transition: all 1s;
   }
@@ -98,7 +101,7 @@
   display: none;
 }
 #page-top a {
-  background: #72C7CA;
+  background: green;
   text-decoration: none;
   color: #fff;
   width: 60px;
