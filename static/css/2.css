@@ -28,6 +28,7 @@ html, body {
 body {
   letter-spacing: .025em;
   line-height: 1.8;
+  background-color: #fcfaca;
 }
 * {
   box-sizing: border-box;
