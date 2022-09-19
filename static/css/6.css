@@ -4,6 +4,7 @@
     /*↑ 5.cssと共通 */
     position: relative;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* .hum_box {
@@ -52,4 +53,14 @@
 .himawari.UP {
     opacity: 1;
     transition: 1.0s;
+}
+
+.oisii {
+    text-align: center;
+    opacity: 0;
+    transition: 2.0s;
+}
+
+.oisii.UP {
+    opacity: 1;
 }

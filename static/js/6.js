@@ -21,5 +21,6 @@ function puresent() {
     $('.hum').attr('src', '/static/img/yatta_ham.png')
     setTimeout(function () {
         $('.hum').attr('src', '/static/img/humhum_ham.png')
-    }, 1000);
+        $('.oisii').addClass('UP');
+    }, 3000);
 }
