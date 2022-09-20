@@ -7,7 +7,41 @@
 } */
 
 /* えさをあげようの枠 */
-.btn-flat-vertical-border {
+.btn {
+  z-index: 10;
+  position: absolute;
+  width: 240px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 70px;
+} 
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.7em;
+  background: linear-gradient(#fe5f95 , #ff3f7f);
+  border: 1px solid #fe3276;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'M+ Type-1 (general-j) Regular';
+  font-size: large;
+  margin-left: 1.5em;
+}
+.btn::after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  content: '';
+  border: 2px dashed #fff;
+  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+}
+/* .btn-flat-vertical-border {
     position: relative;
     display: inline-block;
     font-weight: bold;
@@ -17,7 +51,7 @@
     border-left: solid 8px #fc05aa;
     border-right: solid 8px #fc05aa;
     color:#f70576;
-    background: #fcdcf6;
+    background: skyblue;
     transition: .4s;
   }
   
@@ -26,7 +60,7 @@
     color: green;
     border-left: solid 8px #18fa07;
     border-right: solid 8px #18fa07;
-  }
+  } */
 
 /* .arrow_right{ */
     /* position: relative;
@@ -98,6 +132,7 @@
     -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3);
     -moz-box-shadow:0 1px 3px rgba(0,0,0,0.3);
     box-shadow:0 1px 3px rgba(0,0,0,0.3);
+    font-family: 'M+ Type-1 (general-j) Regular';
   }
   .all_clear:before,
   .all_clear:after {
@@ -140,6 +175,7 @@
     border-top:1px dashed #fff;
     border-bottom:1px dashed #fff;
     padding:10px;
+    font-family: 'M+ Type-1 (general-j) Regular';
   }
 
   /*リボン枠ここまで  */
@@ -196,6 +232,7 @@
     width: 100%;
     margin: 0 0 0 1.5em;
     overflow: hidden;
+    font-family: 'M+ Type-1 (general-j) Regular';
   }
   
   @keyframes balloonAnime {
@@ -279,6 +316,7 @@
   .says p {
     margin: 0;
     padding: 0;
+    font-family: 'M+ Type-1 (general-j) Regular';
   }
 /* ハムスターエリアここまで */
 
