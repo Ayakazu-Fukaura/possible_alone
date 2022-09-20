@@ -60,6 +60,10 @@
     border-bottom: none;/*線を消す*/
   }
 
+  .omiguji_btn.gray {
+    background: gray;
+  }  
+
   .omikuji_name {
     position: absolute;
     bottom: 60%;
