@@ -1,0 +1,101 @@
+/* 見出しエリア */
+.profile {
+    background: #0074bf;
+    color: #a0c238;
+    margin-top: 0;
+    text-align: center;
+}
+/* ここまで */
+
+/* 名前を入れようのエリア */
+.name {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0 auto;
+    font-weight: 600;
+    color: #c93a40;
+    letter-spacing: 0.04rem;
+    background: #65ace4;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 50px;
+    font-size: x-large;
+}
+/* ここまで */
+
+/* テキストボックスエリア */
+.text {
+    position: absolute;
+    right: 30%;
+    width: 140px;
+    height: 30px;
+}
+/* ここまで */
+
+/* チェックボックスエリア */
+
+.check {
+    position: absolute;
+    right: 23%;
+}
+
+.checkbox {
+    position: absolute;
+    right: 23%;
+    top: 23%;
+}
+
+.kun {
+    position: absolute;
+    right: 14%;
+    top: 17%;
+
+}
+
+.tyan {
+    position: absolute;
+    right: 9%;
+    top: 20%;
+}
+
+.Character {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0 auto;
+    font-weight: 600;
+    color: #c93a40;
+    letter-spacing: 0.04rem;
+    background: #65ace4;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 50px;
+    font-size: x-large;
+}
+
+/* ここまで */
+
+/* キャラクターボタンエリア */
+
+.Character_btn {
+    position: absolute;
+    left: 6%;
+}
+
+/* ここまで */
+
+/* OKボタンエリア */
+
+.Button-style {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.5em 1em 0.3em;
+    color: #ffffff;
+    border-radius: 25px;
+    background-color: #0099ff;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 33%;
+    left: 73%;
+  }
+
+/* ここまで */
