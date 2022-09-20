@@ -12,6 +12,7 @@
   opacity: 0.4;
   z-index: -1;
 }
+
 .Polka {
   background-image: radial-gradient(#ffc107 2px, #ffffff 2px);
   background-size: 20px 20px;
@@ -21,15 +22,18 @@
 base
 ==============*/
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
+
 body {
   letter-spacing: .025em;
   line-height: 1.8;
   background-color: #fcfaca;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -51,6 +55,7 @@ body {
   transition: .3s;
   position: relative;
 }
+
 ._a a:after {
   content: "";
   position: absolute;
@@ -61,6 +66,7 @@ body {
   border-right: 1px solid #222222;
   border-bottom: 1px solid #222222;
 }
+
 ._a a:hover {
   color: #ffffff;
   background-position: -100% 0;
@@ -69,20 +75,33 @@ body {
 
 /*タイトルの枠*/
 .title {
-    border-bottom: 3px solid #bc8f8f;
-    text-align: left;
-    background-color: #ffe4e1;
-    font-size: 24px;
-    color: #000;
-    margin: 0px;
-    padding: 15px 5px 5px 15px;
-    width:400px;
-    }
-
-.content {
-    text-align: left;
+  border-bottom: 3px solid #bc8f8f;
+  text-align: left;
+  background-color: #ffe4e1;
+  font-size: 24px;
+  color: #000;
+  margin: 0px;
+  padding: 15px 5px 5px 15px;
+  width: 100%;
 }
 
+.content {
+  text-align: left;
+}
+
+.content div {
+  border: #ffb6c1 solid 1px;
+  border-left: #ffb6c1 solid 20px;
+  padding: 2px;
+  background: #faf5f9;
+  font-size: 22px;
+  margin: 7px 40px;
+}
+
+.content img {
+  display: block;
+  margin: auto;
+}
 
 /*ハムスターの吹き出しエリア*/
 /* .balloon5 {
@@ -112,11 +131,11 @@ body {
     width: 125%;
     height: auto;
    /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
-    /*border-radius: 50%;円*/
-    
-  /* } */
-  
-  /* .balloon5 .chatting {
+/*border-radius: 50%;円*/
+
+/* } */
+
+/* .balloon5 .chatting {
     width: 100%;
   }
   
@@ -142,67 +161,74 @@ body {
   .says p {
     margin: 0;
     padding: 0;
-  } */ 
-  
-  /* solid015 */
-  .button_solid015 {
-    text-align: center;
-  }
-  .button_solid015 p {
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: #10a134;
-    letter-spacing: 0.04rem;
-    display: inline-block;
-    position: relative;
-  }
-  .button_solid015 p:before, .button_solid015 p:after {
-    display: inline-block;
-    position: absolute;
-    top: 45%;
-    width: 20px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #10a134;
-    content: "";
-  }
-  .button_solid015 p:before {
-    left: -30px;
-    -webkit-transform: rotate( 50deg );
-    transform: rotate( 50deg );
-  }
-  .button_solid015 p:after {
-    right: -30px;
-    -webkit-transform: rotate( -50deg );
-    transform: rotate( -50deg );
-  }
-  .button_solid015 a {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 240px;
-    padding: 10px 25px;
-    color: #FFF;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
-    background: #10a134;
-    filter: drop-shadow(0px 2px 4px #ccc);
-    border-radius: 50px;
-    font-size: x-large;
-  }
-  .button_solid015 a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
-  }
-  .button_solid015 a:after {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transition: 0.2s ease-in-out;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    transform: translateY(-54%);
-  }
-  
+  } */
+
+/* solid015 */
+.button_solid015 {
+  text-align: center;
+}
+
+.button_solid015 p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #10a134;
+  letter-spacing: 0.04rem;
+  display: inline-block;
+  position: relative;
+}
+
+.button_solid015 p:before,
+.button_solid015 p:after {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  width: 20px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #10a134;
+  content: "";
+}
+
+.button_solid015 p:before {
+  left: -30px;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+.button_solid015 p:after {
+  right: -30px;
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+}
+
+.button_solid015 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #FFF;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: #10a134;
+  filter: drop-shadow(0px 2px 4px #ccc);
+  border-radius: 50px;
+  font-size: x-large;
+}
+
+.button_solid015 a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.button_solid015 a:after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transition: 0.2s ease-in-out;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transform: translateY(-54%);
+}
