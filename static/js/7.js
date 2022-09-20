@@ -45,7 +45,7 @@ $(function() {
       }
       setTimeout(load_effect, 1000); // 600ミリ秒経過後に実行
 
-      $('#page-top').fadeIn(50000);
+      $('#page-top').fadeIn(10000);
 
 
        });
