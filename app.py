@@ -8,6 +8,10 @@ app = Flask(__name__)
 def page0():
     return render_template('0.html')
 
+@app.route('/00')
+def page00():
+    return render_template('00.html')
+
 @app.route('/1')
 def page1():
     return render_template('komatsu1.html')

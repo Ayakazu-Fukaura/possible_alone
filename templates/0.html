@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="/static/css/0.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/static/js/localStrage.js"></script>
-    <title>Document</title>
+    <title>プロフィール</title>
 </head>
 <body>
     <h1 class="profile">プロフィール</h1>
-    <h3>名前をいれよう!</h3>
-    <input type="text">
-    <p>くん</p><br><p>ちゃん</p>
-    <h3>好きなキャラを選ぼう!</h3>
+    <h3 class="name">名前をいれよう!</h3>
+    <input class="text" type="text"><input type="checkbox" class="check"><p class="kun">くん</p><br><input type="checkbox" class="checkbox"><p class="tyan">ちゃん</p>
+    <h3 class="Character">好きなキャラを選ぼう!</h3>
+  <div class="Character_btn">
     <button><img src="/static/img/bear.png" alt="クマ" width="50px"></button>
     <button><img src="/static/img/boys.png" alt="男の子" width="50x"></button>
     <button><img src="/static/img/girls.png" alt="女の子" width="50x"></button>
@@ -23,7 +23,9 @@
     <button><img src="/static/img/kanahebi.png" alt="カナヘビ" width="50x"></button>
     <button><img src="/static/img/stand_kanahebi.png" alt="スタンドカナヘビ" width="50x"></button>
     <button><img src="/static/img/hamster-nonbg.png" alt="男の子" width="50x"></button>
-    <button><a href="/0.5">OK</a></button>
+  </div>
+    
+    <button class="Button-style"><a href="/00">OK</a></button>
     <script src="/static/js/0.js"></script>
 </body>
 </html>
