@@ -1,6 +1,8 @@
 $(function () {
 
-
+    $(".btn").on("click",function () {
+        puresent();
+    });
 
     // // class'showUp'をdiv要素に追加
     // $('.present_box').addClass('showUp');
@@ -16,11 +18,12 @@ $(function () {
 });
 
 function puresent() {
-    $('#button').addClass('DOWN');
+    $('.btn').addClass('DOWN');
     $('.himawari').addClass('UP');
     $('.hum').attr('src', '/static/img/yatta_ham.png')
     setTimeout(function () {
         $('.hum').attr('src', '/static/img/humhum_ham.png')
         $('.oisii').addClass('UP');
     }, 3000);
+
 }
