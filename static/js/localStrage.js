@@ -18,6 +18,17 @@ if (typeof sessionStorage === 'undefined') {
         viewStorage();
     }
 
+    function setlocalStorage() {
+        var name = "";
+        var icon = []
+        var man_woman = []
+        man_woman = ["くん", "ちゃん"]
+        icon = ["Character_btn" = 0]
+        name = "text" = 0
+        storage.setItem("name", JSON.stringify(name));
+        viewStorage();
+    }
+
 
    
 
