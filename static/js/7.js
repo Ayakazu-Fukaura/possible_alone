@@ -1,4 +1,5 @@
 $(function() {
+    var lock = 0;
     function omikuji() {
      const cont = Math.ceil(Math.random()*4);
      if(cont == 1){
@@ -31,7 +32,11 @@ $(function() {
    
    
        $(".omiguji_btn").on("click",function () {
-           omikuji();
+           if(lock == 0) {
+                $(".omiguji_btn").addClass("gray");
+                omikuji();
+                lock = 1;
+           }
        });
 
 
