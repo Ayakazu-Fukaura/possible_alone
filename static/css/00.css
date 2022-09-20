@@ -1,3 +1,22 @@
+/* 見出しエリア */
+
+h1 {
+    text-align: center;
+}
+
+/* ここまで */
+
+/* テキストエリア */
+
+input {
+    position: absolute;
+    right: 30%;
+    width: 140px;
+    height: 30px;
+}
+
+/* ここまで */
+
 /* 始めるボタンエリア */
 .button_solid015 {
     text-align: center;
@@ -59,6 +78,26 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     transform: translateY(-54%);
+  }
+
+  /* ここまで */
+
+  /* くん・ちゃんエリア */
+
+  .kun {
+    position: absolute;
+    left: 72%;
+  }
+
+  /* ここまで */
+
+
+  /* キャラクター写真エリア */
+
+
+  .img {
+    position: relative;
+    right: 15%;
   }
 
   /* ここまで */
