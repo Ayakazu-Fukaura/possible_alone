@@ -9,20 +9,17 @@ if (typeof sessionStorage === 'undefined') {
 
 
     // （2）sessionStorageへの格納
-    function setlocalStorage() {
-        console.log("初期taskをセット")
-        var tasks = []
-        tasks = ["トイレ", "顔洗い", "ごはん", "かばん準備", "はみがき", "トイレ"];
+    function setlocalStorage(keyword, variable) {
+        console.log("setlocalStorageします")
+        // var tasks = []
+        // tasks = ["トイレ", "顔洗い", "ごはん", "かばん準備", "はみがき", "トイレ"];
         // 値の入力
-        storage.setItem("tasks", JSON.stringify(tasks));
-        viewStorage();
-    }
+        // storage.setItem(キーワード, JSON.stringify(変数));
+        storage.setItem(keyword, JSON.stringify(variable));//これが本体
+        // 念の為確認
+        viewStorage(); 
 
-    function setlocalStorage() {
-        var name = "";
-        name = "久保建英";
-        storage.setItem("name", JSON.stringify(name));
-        viewStorage();
+    ß
     }
 
 

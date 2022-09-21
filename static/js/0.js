@@ -1,9 +1,9 @@
 $(function() {
-    
-    $('.Button-style').click(function(e) {
-      e.preventDefault();  // ボタン押下時のサブミット動作を抑制
-      var tasks = JSON.parse(storage.getItem("tasks"));
-      var val = $(tasks).val();
-      console.log(val);
-    });
+    $('.Button-style').on('click', function() {
+        window.location.href = "/00";
+        var name = "";
+        name = "久保建英";
+        storage.setItem("name", JSON.stringify(name));//これが本体
+      })
+      
   });
