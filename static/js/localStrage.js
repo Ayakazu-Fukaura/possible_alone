@@ -30,7 +30,9 @@ if (typeof sessionStorage === 'undefined') {
 
 
 
-    // （3）sessionStorageからのデータの取得と表示
+    // （3）sessionStorageからのデータの表示 viewStorage(キーワード)
+    // 変数に取得
+    // 入れたい変数 = JSON.parse(storage.getItem(キーワード));
     function viewStorage(keyword = "") {
         if (keyword == "") {
             viewStorage("tasks");
@@ -40,6 +42,7 @@ if (typeof sessionStorage === 'undefined') {
 
         }
     }
+
 
 
 
