@@ -20,11 +20,7 @@ if (typeof sessionStorage === 'undefined') {
 
     function setlocalStorage() {
         var name = "";
-        var icon = []
-        var man_woman = []
-        man_woman = ["くん", "ちゃん"]
-        icon = ["Character_btn" = 0]
-        name = "text" = 0
+        name = "久保建英";
         storage.setItem("name", JSON.stringify(name));
         viewStorage();
     }
