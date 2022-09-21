@@ -23,3 +23,5 @@
 # 個人的メモ
 mdファイルでできること
 https://qiita.com/kamorits/items/6f342da395ad57468ae3
+vscの便利なコマンド
+https://qiita.com/12345/items/64f4372fbca041e949d0

@@ -6,12 +6,12 @@ storage.setItem("crrent_task", JSON.stringify(crrent_task));
 
 
 
-$(function(){
+$(function () {
     var tasks = JSON.parse(storage.getItem("tasks"));
 
     viewStorage();
-    $(".says").text(tasks[crrent_task - 1] + "してくれてありがとう!")
+    $(".says").text(tasks[crrent_task - 1][0] + "してくれてありがとう!")
 
 
-        
+
 })
