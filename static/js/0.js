@@ -1,11 +1,18 @@
 $(function() {
+
+    var name = "";
     $('.Button-style').on('click', function() {
-        var name = "";
-        name = "久保建英";
+        name = $(".text").val();
+        console.log(name)
+        // window.location.href = "/00";
         storage.setItem("name", JSON.stringify(name));//これが本体
-        const str1 = $(".text").val(); // テキストボックスのvalue値を取得
-    $("#span1").text(str1); // spanタグに値を設定
-        
-        window.location.href = "/00";
-      })      
+        viewStorage("name");
+      })
+      
+      $('.Character_btn1').on('click', function(){
+        let url = "/static/img/bear.png"
+        $('a').attr('img');
+        console.log(url)
+    });
+
   });
