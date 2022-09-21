@@ -11,6 +11,7 @@
 //     var storage = localStorage;
 
 
+
 //     // （2）sessionStorageへの格納
 //     function setlocalStorage() {
 //         console.log("初期taskをセット")
@@ -20,6 +21,7 @@
 //         storage.setItem("tasks", JSON.stringify(tasks));
 //         viewStorage();
 //     }
+
 
 
 
