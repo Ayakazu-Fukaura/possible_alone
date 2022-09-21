@@ -4,13 +4,22 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+@app.route('/test')
+def testpage():
+    # 実験用のページです（深浦
+    return render_template('test.html')
+# #######################
+
+
 @app.route('/0')
 def page0():
     return render_template('0.html')
 
+
 @app.route('/00')
 def page00():
     return render_template('00.html')
+
 
 @app.route('/1')
 def page1():
@@ -40,6 +49,7 @@ def page5():
 @app.route('/6')
 def page6():
     return render_template('6.html')
+
 
 @app.route('/7')
 def page7():
