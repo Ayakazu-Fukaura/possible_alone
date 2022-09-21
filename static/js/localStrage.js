@@ -33,8 +33,7 @@ if (typeof sessionStorage === 'undefined') {
     // （3）sessionStorageからのデータの取得と表示
     function viewStorage(keyword = "") {
         if (keyword == "") {
-            var tasks = JSON.parse(storage.getItem("tasks"));
-            console.log("tasksの中身；" + tasks);
+            viewStorage("tasks");
         } else {
             var variable = JSON.parse(storage.getItem(keyword));
             console.log("keyword(" + keyword + ")の結果：" + variable);
