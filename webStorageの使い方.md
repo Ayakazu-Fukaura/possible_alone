@@ -16,7 +16,7 @@ localStrage.js を読み込んでください
 ## コマンド
 1. tasks を確認したいとき
 ```javascript:タイトル
-viewStorage()
+viewStorage("tasks");
 ```
 ブラウザの検証のConsoleに表示されるよ
 
