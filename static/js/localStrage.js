@@ -60,6 +60,13 @@ if (typeof sessionStorage === 'undefined') {
         viewStorage();
     }
 
+    function setlocalStorage() {
+        var name = "";
+        name = "久保建英";
+        storage.setItem("name", JSON.stringify(name));
+        viewStorage();
+    }
+
 
 
 
