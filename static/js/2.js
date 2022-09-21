@@ -1,6 +1,8 @@
 $(function () {
     //初期タスクセット
-    setlocalStorage();
+    var tasks = [];
+    tasks = [["トイレ", "toilet.png"], ["顔洗い", "kao.png"], ["ごはん", "gohan.png"], ["かばん準備", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
+    setlocalStorage("tasks", tasks);
 
     //crrent_taskを初期化
     var crrent_task = 0
