@@ -2,6 +2,7 @@ $(function () {
     console.log("実験場");
     // removeallStorage();
     // viewStorage("tasks");
+    var i = 0;
     var all_task = JSON.parse(storage.getItem("all_task"));;
     var tasks = JSON.parse(storage.getItem("tasks"));
 
@@ -20,12 +21,14 @@ $(function () {
 
 
     //タスクリストを表示
-    for (let i = 1; i < tasks.length; i++) {
+    for (i = 0; i < tasks.length; i++) {
         // $('#content').append('<div><div>' + tasks[i][0] + '</div><img src="/static/img/pink_yajirusi.png" alt="写真"><div>');
         $('#content').append('<div>' + tasks[i][0] + '</div>');
     }
 
-
+    for (i = 0; i < tasks.length - 1; i++) {
+        $('#yazirusi').append('<img src="/static/img/pink_yajirusi.png" alt="矢印">');
+    }
 
     Sortable.create(content, {
         animation: 150,
