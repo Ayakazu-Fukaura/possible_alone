@@ -20,20 +20,26 @@ if (typeof sessionStorage === 'undefined') {
         viewStorage();
     }
 
-    function setlocalStorage() {
-        var name = "";
-        name = "久保建英";
-        storage.setItem("name", JSON.stringify(name));
-        viewStorage();
-    }
+    // function setlocalStorage() {
+    //     var name = "";
+    //     name = "久保建英";
+    //     storage.setItem("name", JSON.stringify(name));
+    //     viewStorage();
+    // }
 
 
 
 
     // （3）sessionStorageからのデータの取得と表示
-    function viewStorage() {
-        var tasks = JSON.parse(storage.getItem("tasks"));
-        console.log("リストを表示します：" + tasks);
+    function viewStorage(keyword = "") {
+        if (keyword == "") {
+            var tasks = JSON.parse(storage.getItem("tasks"));
+            console.log("tasksの中身；" + tasks);
+        } else {
+            var variable = JSON.parse(storage.getItem(keyword));
+            console.log("keyword(" + keyword + ")の結果：" + variable);
+
+        }
     }
 
 

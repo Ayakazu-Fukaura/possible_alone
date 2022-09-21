@@ -8,7 +8,7 @@ $(function () {
     //crrent_taskを初期化
     var crrent_task = 0
     storage.setItem("crrent_task", JSON.stringify(crrent_task));
-
+    viewStorage("crrent_task");
     //タスクリストを表示
     var tasks = [];
     tasks = JSON.parse(storage.getItem("tasks"));
