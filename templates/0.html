@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" >
     <link rel="stylesheet" href="/static/css/0.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/static/js/localStrage.js"></script>
@@ -12,7 +12,11 @@
 <body>
     <h1 class="profile">プロフィール</h1>
     <h3 class="name">名前をいれよう!</h3>
-    <input class="text" type="text" name="chkInput" value=""><input type="radio" class="check" name="txtInput" value=""><p class="kun">くん</p><br><input type="radio" class="checkbox" name="txtInput" value=""><p class="tyan">ちゃん</p>
+    <input class="text" type="text" name="chkInput" value="">
+  <div class="checkbox">
+    <input type="radio" name="c1" value="くん">くん<br>
+    <input type="radio" name="c1" value="ちゃん">ちゃん
+  </div>
     <h3 class="Character">好きなキャラを選ぼう!</h3>
   <div class="Character_btn">
     <button class="Character_btn1"><a href="#"><img src="/static/img/bear.png" alt="クマ" width="50px"></a></button>

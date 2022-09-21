@@ -1,18 +1,18 @@
 $(function() {
-
+    var sexial = "男";
     var name = "";
     $('.Button-style').on('click', function() {
+        sexial = $('input:radio[name="c1"]:checked').val();
+        viewStorage("sexial");
+
         name = $(".text").val();
         console.log(name)
-        // window.location.href = "/00";
+
+        window.location.href = "/00";
+        storage.setItem("sexial", JSON.stringify(sexial));
         storage.setItem("name", JSON.stringify(name));//これが本体
-        viewStorage("name");
       })
-      
-      $('.Character_btn1').on('click', function(){
-        let url = "/static/img/bear.png"
-        $('a').attr('img');
-        console.log(url)
-    });
+
+
 
   });
