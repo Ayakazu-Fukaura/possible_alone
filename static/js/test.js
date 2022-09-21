@@ -3,8 +3,10 @@ $(function () {
     // removeallStorage();
     // viewStorage("tasks");
     var i = 0;
-    var all_task = JSON.parse(storage.getItem("all_task"));;
-    var tasks = JSON.parse(storage.getItem("tasks"));
+    var all_task = [];
+    all_task = JSON.parse(storage.getItem("all_task"));;
+    var tasks = [];
+    tasks = JSON.parse(storage.getItem("tasks"));
 
     if (!all_task) {
         all_task = [["トイレ", "toilet.png"], ["ごはん", "gohan.png"], ["はみがき", "hamigaki.png"], ["かばん準備", "kaban.png"], ["顔洗い", "kao.png"],];
@@ -25,17 +27,25 @@ $(function () {
         // $('#content').append('<div><div>' + tasks[i][0] + '</div><img src="/static/img/pink_yajirusi.png" alt="写真"><div>');
         $('#content').append('<div>' + tasks[i][0] + '</div>');
     }
-
+    // 矢印表示
     for (i = 0; i < tasks.length - 1; i++) {
         $('#yazirusi').append('<img src="/static/img/pink_yajirusi.png" alt="矢印">');
     }
 
+    // ドラッグテーブル表示
     Sortable.create(content, {
         animation: 150,
     });
 
+    // 新しいタスクを保存
     $('#submit').click(function () {
-        console.log("発火");
+        var target = $(content).children();
+        tasks = [];
+        // console.log(target.length);
+        for (i = 0; i < target.length; i++) {
+            tasks.push([target.eq(i).text(), ".jpg"]);
+        }
+        setlocalStorage("tasks", tasks);
     })
 
 })
