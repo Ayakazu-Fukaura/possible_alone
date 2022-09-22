@@ -51,14 +51,16 @@ $(function () {
         var target = $('#content').children();
         tasks = [];
         // console.log("ながさ:" + target.length);
-        if (target.length == 0) {
 
-        }
         for (i = 0; i < target.length; i++) {
             tasks.push([target.eq(i).text(), illust(target.eq(i).text())]);
         }
         setlocalStorage("tasks", tasks);
-        console.log("tasks:" + tasks);
+        // console.log("tasks:" + tasks);
+
+        if (target.length == 0) {
+            basic_task();
+        }
     });
 
     // リセット

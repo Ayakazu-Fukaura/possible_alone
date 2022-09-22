@@ -16,7 +16,7 @@ $(function () {
     var tasks = [];
     tasks = JSON.parse(storage.getItem("tasks"));
     if (!tasks || tasks == [] || tasks == "") { basic_task(); }
-
+    console.log(tasks);
 
     $('.content').append('<div>' + tasks[0][0] + '</div>');
     for (let i = 1; i < tasks.length; i++) {
