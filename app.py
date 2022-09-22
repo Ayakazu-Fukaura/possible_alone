@@ -30,9 +30,11 @@ def page1():
 def page2():
     return render_template('2.html')
 
+
 @app.route('/edit_task')
 def edit_taskpage():
     return render_template('edit_task.html')
+
 
 @app.route('/3')
 def page3():
@@ -58,8 +60,6 @@ def page6():
 def page7():
     return render_template('7.html')
 
-    
-
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=5000)
