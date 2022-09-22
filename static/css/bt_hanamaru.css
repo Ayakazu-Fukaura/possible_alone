@@ -61,6 +61,14 @@ body {
   padding-top: 5vh;
   margin-left: auto;
   margin-right: auto;
+
+  height: calc(100% - 170px);
+  overflow: visible;
+}
+
+#task_text {
+  display: inline;
+  white-space: nowrap;
 }
 
 .image {
