@@ -2,7 +2,7 @@ $(function () {
     //初期タスクセット
     console.log("タスクを初期設定で固定します");
     var tasks = [];
-    tasks = [["トイレ", "toilet.png"], ["顔洗い", "kao.png"], ["ごはん", "gohan.png"], ["かばん準備", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
+    tasks = [["トイレ", "toilet.png"], ["顔洗い", "kao.png"], ["しょくじ", "gohan.png"], ["かばん準備", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
     setlocalStorage("tasks", tasks);
 
     //crrent_taskを初期化
