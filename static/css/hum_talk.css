@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  position: relative;
 }
 
 body {
@@ -17,6 +18,10 @@ body {
     Meiryo,
     sans-serif;
   height: 100%;
+}
+
+.fade {
+  margin-left: auto;
 }
 
 /* ここはハムスターありがとうエリア */
@@ -59,9 +64,9 @@ body {
   background: #fad5e6;
   font-size: 14px;
 
-  opacity: 0;
+  /* opacity: 0; */
   /* いったん非表示 */
-  visibility: hidden;
+  /* visibility: hidden; */
   transform: translateY(40px);
   transition: all 1s;
 }
@@ -96,9 +101,14 @@ body {
 
 .goodjob {
   color: red;
-  position: fixed;
+  position: absolute;
   top: 320px;
-  left: 30%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  margin-left: auto;
 }
 
 /* ボタン */
