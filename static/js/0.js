@@ -15,7 +15,7 @@ $(function() {
         local_src = this.children[0].children[0].getAttribute("src")
         
         storage.setItem("local_src", JSON.stringify(local_src));
-        viewStorage("local_src");
+        
     })
 
 
