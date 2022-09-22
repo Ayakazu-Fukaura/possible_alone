@@ -19,6 +19,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 body{
@@ -174,14 +175,25 @@ body{
   .timer {
     position: absolute;
     bottom: 150px;  /*ほんとは嫌だけどpxサイズ指定でむりやり下げた*/
-    left: 3px;
-    font-size: 13px;
+    /* left: 3px; */
+    font-size: 18px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
   }
 
   .timer2 {
     position: absolute;
-    bottom: 120px;  /*ほんとは嫌だけどpxサイズ指定でむりやり下げた*/
-    left: 97px;
+    /*bottom: 120px;  ほんとは嫌だけどpxサイズ指定でむりやり下げた
+    /* left: 90px; */
+    
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
   }
   
   /*ここまでタイマーエリア */
