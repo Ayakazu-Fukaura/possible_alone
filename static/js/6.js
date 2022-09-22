@@ -8,7 +8,7 @@ $(function () {
     var sexial = JSON.parse(storage.getItem("sexial"));
     console.log(sexial);
     if (!name || name == "") {
-        $(".oisii a").text("みんなも<br>しゅっぱつ！！");
+        $(".oisii a").html("みんなも<br>しゅっぱつ！！");
 
     } else {
         $(".oisii a").html(name + sexial + "も<br>しゅっぱつ！！");

@@ -22,7 +22,7 @@ body {
 .hum {
     /* position: absolute; */
     z-index: 0;
-    width: 180px;
+    width: 270px;
     transition: 1.0s;
 }
 
@@ -70,7 +70,7 @@ body {
     opacity: 0;
     position: absolute;
     width: 180px;
-    top: 0;
+    top: 90%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -99,7 +99,7 @@ body {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 90%; /*ここは１００％のほうがいいのか？幅に入るように縮めた*/
+    width: 92%; /*ここは１００％のほうがいいのか？幅に入るように縮めた*/
   }
   
 .oisii p {
