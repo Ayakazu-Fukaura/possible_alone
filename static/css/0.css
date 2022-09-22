@@ -1,9 +1,14 @@
+body{
+    text-align: center;
+}
+
 /* 見出しエリア */
 .profile {
     background: #0074bf;
-    color: #a0c238;
-    margin-top: 0;
+    color: yellow;
+    margin-top: auto;
     text-align: center;
+    padding: 5% 3%;
 }
 /* ここまで */
 
@@ -11,7 +16,7 @@
 .name {
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 0 auto;
+    /* margin-top: 0 auto; */
     font-weight: 600;
     color: #c93a40;
     letter-spacing: 0.04rem;
@@ -19,15 +24,20 @@
     filter: drop-shadow(0px 2px 4px #ccc);
     border-radius: 50px;
     font-size: x-large;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 /* ここまで */
 
 /* テキストボックスエリア */
 .text {
-    position: absolute;
+    /* position: absolute; */
     right: 30%;
     width: 140px;
     height: 30px;
+    font-size: xx-large;
     
 }
 /* ここまで */
@@ -36,16 +46,17 @@
 
 
 .checkbox {
-    position: absolute;
+    position: static;
     right: 9%;
     top: 20%;
+    text-align: right;
 }
 
 
 .Character {
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 0 auto;
+    /* margin-top: 0 auto; */
     font-weight: 600;
     color: #c93a40;
     letter-spacing: 0.04rem;
@@ -54,7 +65,11 @@
     border-radius: 50px;
     font-size: x-large;
     position: relative;
-    top: 40px;
+    /* top: 70px; */
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 
 /* ここまで */
@@ -62,20 +77,38 @@
 /* キャラクターボタンエリア */
 
 #Character_btn {
-    position: absolute;
+    /* position: absolute;
     left: 6%;
-    bottom: 15%;
-    
+    bottom: 15%; */
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: baseline;
+    justify-content: center;
+    /* margin: 80px 10px; */
+    /* padding: 0; */
     
 }
-
+button img {
+    width: 90px;
+    /*画像の幅*/
+    height: 90px;
+    /*画像の高さ*/
+    transition-duration: 0.5s;
+    /*変化の時間*/
+    /* padding: 4px; */
+    background-color: #9AF940;
+    border-radius: 15px;
+    /*角のまるみ*/
+    /* border: none; */
+  
+  }
 
 /* ここまで */
 
 /* OKボタンエリア */
 
 .Button-style {
-    font-size: 18px;
+    font-size:40px;
     display: inline-block;
     padding: 0.5em 1em 0.3em;
     color: #ffffff;
@@ -84,9 +117,10 @@
     border: none;
     cursor: pointer;
     margin-right: 20px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 7%;
     left: 75%;
+    
   }
 
 /* ここまで */
