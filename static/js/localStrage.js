@@ -14,7 +14,7 @@ if (typeof sessionStorage === 'undefined') {
 
     // （2）sessionStorageへの格納
     function setlocalStorage(keyword, variable) {
-        console.log("初期taskをセット");
+        console.log("setlocalStorage実行");
         // 値の入力
         storage.setItem(keyword, JSON.stringify(variable));
         viewStorage();
