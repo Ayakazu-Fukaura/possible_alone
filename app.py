@@ -58,6 +58,8 @@ def page6():
 def page7():
     return render_template('7.html')
 
+    
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
