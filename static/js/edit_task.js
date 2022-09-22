@@ -78,7 +78,7 @@ $(function () {
 
     })
     function illust(key) {
-        if (key == 'ごはん') {
+        if (key == 'しょくじ') {
             return 'gohan.png';
         }
         if (key == 'うがいてあらい') {
@@ -109,9 +109,5 @@ $(function () {
         }
 
     }
-    function basic_task() {
-        tasks = [["トイレ", "toilet.png"], ["かおあらい", "kao.png"], ["ごはん", "gohan.png"], ["かばんようい", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
-        setlocalStorage("tasks", tasks);
-        console.log("tasksを初期設定しました");
-    }
+
 });
