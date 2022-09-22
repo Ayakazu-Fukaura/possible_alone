@@ -8,7 +8,8 @@
 // ここは村上さんがJavaScriptをする場所(③・④)
 
 // ここはタイマーエリア
-
+// new Audio("/static/sound/wake.wav");
+// play();
 var timer1; //タイマーを格納する変数（タイマーID）の宣言
 
 
@@ -57,7 +58,9 @@ function tmWrite(int)
   if (int<=0)
   {
     reSet();
-    alert("時間です！");
+   
+  
+    alert("じかんだよ！");
   }
   else
   {
