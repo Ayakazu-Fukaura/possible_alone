@@ -52,7 +52,7 @@ $(function () {
         tasks = [];
         console.log("ながさ:" + target.length);
         for (i = 0; i < target.length; i++) {
-            tasks.push([target.eq(i).text(), ".jpg"]);
+            tasks.push([target.eq(i).text(), illust(target.eq(i).text())]);
         }
         setlocalStorage("tasks", tasks);
         // console.log("tasks:" + tasks);
@@ -64,6 +64,7 @@ $(function () {
         $('#yazirusi').empty();
     })
 
+    // 画像選択
     $('button').click(function () {
         var select_alt = $(this).children().attr('alt');
         // console.log(select_alt);
@@ -79,6 +80,8 @@ $(function () {
         }
         if (key == 'トイレ') {
             return 'toilet.png';
+        } else {
+            return 'none.png';
         }
     }
 });
