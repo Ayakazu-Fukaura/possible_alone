@@ -22,6 +22,7 @@ body {
 
 .fade {
   margin-left: auto;
+
 }
 
 /* ここはハムスターありがとうエリア */
@@ -29,12 +30,12 @@ body {
 
 .balloon5 {
   width: 100%;
-  margin: 1.5em 0;
+  margin: 10px 0;
   overflow: hidden;
   margin-left: 0;
   color: black;
   position: absolute;
-  bottom: 90px;
+  bottom: 70px;
 
 }
 
@@ -42,6 +43,7 @@ body {
   float: left;
   margin-right: -90px;
   width: 90px;
+  padding-left: 30px;
 }
 
 .balloon5 .faceicon img {

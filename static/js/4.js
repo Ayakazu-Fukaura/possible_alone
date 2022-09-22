@@ -10,7 +10,7 @@ $(function () {
     var tasks = JSON.parse(storage.getItem("tasks"));
 
     viewStorage();
-    $(".says").text(tasks[crrent_task - 1][0] + "してくれてありがとう!")
+    $(".says").html(tasks[crrent_task - 1][0] + "してくれて<br>ありがとう!")
 
 
 
