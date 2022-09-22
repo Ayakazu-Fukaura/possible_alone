@@ -246,7 +246,6 @@ body {
 .fade.active {
   opacity: 1;
   transform: translateY(0px);
-  >>>>>>>ea12862d98d646f002172574b10d6a44fa56b84d
 }
 
 .timer2 {
@@ -277,6 +276,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+  margin-top: 10px;
 }
 
 .fade.active {
