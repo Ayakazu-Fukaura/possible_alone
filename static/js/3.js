@@ -25,7 +25,7 @@ $(function () {
         height = document.getElementById("task_text").offsetHeight;
 
     }
-    // height = document.getElementById("task_text").offsetHeight;
+    height = document.getElementById("task_text").offsetHeight;
 
     console.log("調整後：" + height);
 
