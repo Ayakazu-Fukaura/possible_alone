@@ -9,20 +9,17 @@ $(function () {
     all_task = JSON.parse(storage.getItem("all_task"));;
     var tasks = [];
     tasks = JSON.parse(storage.getItem("tasks"));
+    if (!tasks) { basic_task(); }
+
 
     //タスクデータがなければ初期化
-    if (!all_task) {
-        all_task = [["トイレ", "toilet.png"], ["ごはん", "gohan.png"], ["はみがき", "hamigaki.png"], ["かばん準備", "kaban.png"], ["顔洗い", "kao.png"],];
-        setlocalStorage("all_task", all_task);
-        console.log("all_taskを初期設定しました");
-    }
-    viewStorage("all_task");
-    if (!tasks) {
-        tasks = [["トイレ", "toilet.png"], ["顔洗い", "kao.png"], ["ごはん", "gohan.png"], ["かばん準備", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
-        setlocalStorage("tasks", tasks);
-        console.log("tasksを初期設定しました");
-    }
-    viewStorage("tasks");
+    // if (!all_task) {
+    //     all_task = [["トイレ", "toilet.png"], ["ごはん", "gohan.png"], ["はみがき", "hamigaki.png"], ["かばん準備", "kaban.png"], ["顔洗い", "kao.png"],];
+    //     setlocalStorage("all_task", all_task);
+    //     console.log("all_taskを初期設定しました");
+    // }
+    // viewStorage("all_task");
+    // viewStorage("tasks");
 
 
     //タスクリストを表示
@@ -107,5 +104,10 @@ $(function () {
         if (key == 'ほうこく') {
             return 'houkoku.png';
         }
+    }
+    function basic_task() {
+        tasks = [["トイレ", "toilet.png"], ["かおあらい", "kao.png"], ["ごはん", "gohan.png"], ["かばんようい", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
+        setlocalStorage("tasks", tasks);
+        console.log("tasksを初期設定しました");
     }
 });
