@@ -58,7 +58,7 @@ $(function () {
             tasks.push([target.eq(i).text(), illust(target.eq(i).text())]);
         }
         setlocalStorage("tasks", tasks);
-        // console.log("tasks:" + tasks);
+        console.log("tasks:" + tasks);
     });
 
     // リセット
@@ -82,7 +82,7 @@ $(function () {
             return 'gohan.png';
         }
         if (key == 'うがいてあらい') {
-            return 'ugai_tearai.png'
+            return 'ugai_tearai.png';
         }
         if (key == 'かおあらい') {
             return 'kao.png';
