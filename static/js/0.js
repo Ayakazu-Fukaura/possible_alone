@@ -1,18 +1,22 @@
 $(function() {
-
+    var local_src = "";
+    var sexial = "男";
     var name = "";
     $('.Button-style').on('click', function() {
+        sexial = $('input:radio[name="c1"]:checked').val();
         name = $(".text").val();
-        console.log(name)
-        // window.location.href = "/00";
+        window.location.href = "/00";
+
+        storage.setItem("sexial", JSON.stringify(sexial));
         storage.setItem("name", JSON.stringify(name));//これが本体
-        viewStorage("name");
       })
-      
-      $('.Character_btn1').on('click', function(){
-        let url = "/static/img/bear.png"
-        $('a').attr('img');
-        console.log(url)
-    });
+
+    $('#Character_btn button').on('click', function(){
+        local_src = this.children[0].children[0].getAttribute("src")
+        
+        storage.setItem("local_src", JSON.stringify(local_src));
+        viewStorage("local_src");
+    })
+
 
   });

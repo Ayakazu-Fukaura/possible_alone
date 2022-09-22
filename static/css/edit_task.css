@@ -33,7 +33,7 @@
   
   body {
     letter-spacing: .025em;
-    line-height: 1.8;
+    /* line-height: 1.8; */
     background-color: #fcfaca;
   }
   
@@ -83,7 +83,7 @@
     text-align: left;
     background-color: #ffe4e1;
     font-size: 24px;
-    color: #000;
+    color: rgb(66, 19, 19);
     margin: 0px;
     padding: 15px 5px 5px 15px;
     width: 100%;
@@ -93,7 +93,7 @@
     text-align: left;
     overflow: scroll;
     padding-top: 67px;
-    /* padding-bottom: 115px; */
+    padding-bottom: 115px;
     height: calc(100% - 115px);
   }
   
@@ -113,65 +113,33 @@
     height: 20px;
   }
   
-  /*ハムスターの吹き出しエリア*/
-  /* .balloon5 {
-      transform-origin: left top;
-      animation: balloonAnime 3s ease-out 0s infinite normal both;
-      width: 100%;
-      padding: 5px 20px 0px 20px; 
-      overflow: hidden;
-    }
+  /* アイコン欄 */
+  .icon_btn{
+    /* display: flex;
+    display: inline-flex; */
+    flex-wrap: wrap; 
+    align-content: stretch;
+    align-items: baseline;
+    justify-content: center;
+    margin: 4px 0;  
+    padding: 0;
     
-    @keyframes balloonAnime {
-      0% { transform: scale(1); }
-      10% { transform: scale(1.05); }
-      20% { transform: scale(1); }
-      30% { transform: scale(1.02); }
-      40% { transform: scale(1); }
-      100% { transform: scale(1); }
-    }
-    
-    .balloon5 .faceicon {
-      float: left;
-      margin-right: -90px;
-      width: 87px;
-    }
-    
-    .balloon5 .faceicon img{
-      width: 125%;
-      height: auto;
-     /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
-  /*border-radius: 50%;円*/
+}
   
-  /* } */
-  
-  /* .balloon5 .chatting {
-      width: 100%;
-    }
-    
-    .says {
-      display: inline-block;
-      position: relative; 
-      margin: 20px 0 0 100px;
-      padding: 17px 13px;
-      border-radius: 12px;
-      background: #fad5e6;
-    }
-    
-    .says:after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 18px; 
-      left: -24px;
-      border: 12px solid transparent;
-      border-right: 12px solid #fad5e6;
-    }
-    
-    .says p {
-      margin: 0;
-      padding: 0;
-    } */
+ button img {
+    width: 90px; /*画像の幅*/
+    height: 90px; /*画像の高さ*/
+    transition-duration: 0.5s; /*変化の時間*/
+    /* padding: 4px; */
+    background-color: #fdce3f;
+    border-radius: 15px; /*角のまるみ*/
+    /* border: none; */
+   
+  }
+  button img:hover {
+    transform: scale(1.2,1.2); /*画像の拡大*/
+    cursor: pointer; /*カーソルをポインターにする*/
+  }
   
   /* solid015 */
   .button_solid015 {
@@ -181,7 +149,8 @@
     width: 100%;
   }
   
-  .button_solid015 p {
+  /* ボタンの上のコメント欄はずした */
+  /* .button_solid015 p {
     margin-bottom: 5px;
     font-weight: 600;
     color: #10a134;
@@ -212,23 +181,23 @@
     right: -30px;
     -webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
-  }
+  } */
   
   .button_solid015 a {
     position: relative;
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    max-width: 240px;
+    max-width: 150px;
     padding: 10px 25px;
     color: #FFF;
     transition: 0.3s ease-in-out;
     font-weight: 600;
-    background: #10a134;
+    background: rgb(43, 43, 252);
     filter: drop-shadow(0px 2px 4px #ccc);
     border-radius: 50px;
-    font-size: x-large;
+    font-size: large;
     text-decoration: none;
   }
   
@@ -246,3 +215,5 @@
     font-weight: 900;
     transform: translateY(-54%);
   }
+
+ 
