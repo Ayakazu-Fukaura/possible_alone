@@ -9,12 +9,14 @@ h1 {
 /* テキストエリア */
 
 input {
-    position: absolute;
+    /* position: absolute; */
     right: 30%;
     width: 140px;
-    height: 30px;
+    /* height: 30px; */
     font-size: 38px;
     border: none;
+    text-align: right;
+    display: inline-block;
 }
 
 /* ここまで */
@@ -25,8 +27,10 @@ a {
 }
 .button_solid015 {
     text-align: center;
-    position: relative;
-    top: 420px;
+    position: absolute;
+    /* top: 420px; */
+    bottom: 0;
+    width: 100%;
   }
   
   .button_solid015 p {
@@ -86,9 +90,11 @@ a {
   /* くん・ちゃんエリア */
 
   .kun {
-    position: absolute;
+    /* position: absolute; */
     left: 56%;
     border: none;
+    text-align: left;
+    display: inline-block;
   }
 
   /* ここまで */
@@ -98,7 +104,7 @@ a {
 
 
   .img {
-    position: absolute;
+    /* position: absolute; */
     bottom: 26%;
     right: 8%;
   }
