@@ -12,7 +12,8 @@ setInterval('showClock1()', 1000);
 $(function () {
     var name = JSON.parse(storage.getItem("name"));
     var sexial = JSON.parse(storage.getItem("sexial"));
-    console.log(sexial);
+    var local_src = JSON.parse(storage.getItem("local_src"));
+    console.log(local_src);
     if (!name || name == "") {
         $(".title").text("みんな～ おはよう！");
 
@@ -22,6 +23,9 @@ $(function () {
         } else {
             $(".title").text(name + "くん おはよう！");
         }
+    }
+    if (local_src && local_src != "") {
+        $('#tittle_icon').attr('src', local_src);
     }
 
 

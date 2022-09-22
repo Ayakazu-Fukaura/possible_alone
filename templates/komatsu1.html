@@ -13,7 +13,10 @@
 </head>
 
 <body>
-  <h1>ひとりでできるもん</h1>
+  <div id="title_set">
+    <h1>ひとりでできるもん</h1>
+    <div id="icon_box"><img id="tittle_icon" src="" alt="アイコン"></div>
+  </div>
   <!-- 背景 -->
   <div class="bg_pattern Polka"></div>
   <!-- 黒板 -->
@@ -32,7 +35,7 @@
       Day2[3] = "水"; Day2[4] = "木"; Day2[5] = "金";
       Day2[6] = "土";
       document.write("<span style='color:white;'>");
-      document.write("今日は<br>" + Ye + Mo + Da + "（" + Day2[Day] + "）");
+      document.write("今日は<br>" + Mo + Da + "（" + Day2[Day] + "）");
       document.write("です。</span>");
     </script>
     <p id="RealtimeClockArea">ここにじかんがでるよ<br>かくにんしてね</p>
