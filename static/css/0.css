@@ -61,11 +61,14 @@
 
 /* キャラクターボタンエリア */
 
-.Character_btn {
+#Character_btn {
     position: absolute;
     left: 6%;
     bottom: 40%;
+    
+    
 }
+
 
 /* ここまで */
 
