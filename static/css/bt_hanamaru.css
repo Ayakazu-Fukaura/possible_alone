@@ -1,9 +1,11 @@
 @charset "utf-8";
+
 @media screen and (max-width:480px) {
- 
-	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
- 
+
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+
 }
+
 /* ここは小松さんがcss（①・②）をする場所 */
 
 
@@ -16,14 +18,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-*{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 
-body{
-    font-family: "Helvetica Neue",
+body {
+  font-family: "Helvetica Neue",
     Arial,
     "Hiragino Kaku Gothic ProN",
     "Hiragino Sans",
@@ -37,6 +39,7 @@ body{
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 100% 0;
   }
@@ -45,18 +48,18 @@ body{
 /* ここは見出しエリア */
 
 .context {
-    font-size: 35px;
-    color: blue;
-    writing-mode: vertical-rl;
-    position: absolute;
-    top: 20px;
-    left: 32%;
+  font-size: 35px;
+  color: blue;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 20px;
+  left: 32%;
 }
 
 .image {
-    position: absolute;
-    left: 180px;
-    bottom: 200px;
+  position: absolute;
+  left: 180px;
+  bottom: 200px;
 }
 
 /* ここまで */
@@ -65,21 +68,21 @@ body{
 
 @keyframes animate {
 
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
 
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 
 }
 
-.goodjob{
+.goodjob {
   font-size: x-large;
   margin-left: -70px;
 }
@@ -87,9 +90,11 @@ body{
 /* solid015 */
 .button_solid015 {
   text-align: center;
-  padding-top: 490px;  /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
-  
+  padding-top: 490px;
+  /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
+
 }
+
 .button_solid015 p {
   margin-bottom: 5px;
   font-weight: 600;
@@ -97,9 +102,11 @@ body{
   letter-spacing: 0.04rem;
   display: inline-block;
   position: relative;
-  
+
 }
-.button_solid015 p:before, .button_solid015 p:after {
+
+.button_solid015 p:before,
+.button_solid015 p:after {
   display: inline-block;
   position: absolute;
   top: 45%;
@@ -109,16 +116,19 @@ body{
   background-color: #f52731;
   content: "";
 }
+
 .button_solid015 p:before {
   left: -30px;
-  -webkit-transform: rotate( 50deg );
-  transform: rotate( 50deg );
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
 }
+
 .button_solid015 p:after {
   right: -30px;
-  -webkit-transform: rotate( -50deg );
-  transform: rotate( -50deg );
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
+
 .button_solid015 a {
   position: relative;
   display: flex;
@@ -136,10 +146,12 @@ body{
   font-size: x-large;
   text-decoration: none;
 }
+
 .button_solid015 a:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
 }
+
 .button_solid015 a:after {
   position: absolute;
   top: 50%;
@@ -152,7 +164,7 @@ body{
 
 
 /* .Button-style { */
-    /* width: 250px;
+/* width: 250px;
     font-size: 20px;
     display: inline-block;
     padding: 0.5em 1em 0.3em;
@@ -172,51 +184,58 @@ body{
 
 /*ここはタイマーエリア */
 
-  .timer {
-    position: absolute;
-    bottom: 150px;  /*ほんとは嫌だけどpxサイズ指定でむりやり下げた*/
-    /* left: 3px; */
-    font-size: 18px;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-  }
-
-  .timer2 {
-    position: absolute;
-    /*bottom: 120px;  ほんとは嫌だけどpxサイズ指定でむりやり下げた
-    /* left: 90px; */
-    
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-  }
-  
-  /*ここまでタイマーエリア */
-
-  /* ここは、はなまるエリア */
-
-  .fade {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 1.5s, transform 4s;
-    max-width: 320px;
-    position: absolute;
-    bottom: 270px;
-    right: 2%;
-}.fade.active {
-	opacity: 1;
-	transform: translateY(0px);
+.timer {
+  position: absolute;
+  bottom: 150px;
+  /*ほんとは嫌だけどpxサイズ指定でむりやり下げた*/
+  /* left: 3px; */
+  font-size: 18px;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
- 
 
-  /* ここまではなまるエリア */
+.timer2 {
+  position: absolute;
+  /*bottom: 120px;  ほんとは嫌だけどpxサイズ指定でむりやり下げた
+    /* left: 90px; */
 
- 
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+/*ここまでタイマーエリア */
+
+/* ここは、はなまるエリア */
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s, transform 4s;
+  max-width: 320px;
+  position: absolute;
+  /* bottom: 270px; */
+  top: 10px;
+  /* right: 2%; */
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.fade.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+/* ここまではなまるエリア */
+
+
 
 
 /* ここまで */
