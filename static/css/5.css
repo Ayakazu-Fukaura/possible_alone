@@ -1,3 +1,8 @@
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
 
 /* .arrow_right {
     position: relative;
@@ -8,22 +13,23 @@
 
 /* えさをあげようの枠 */
 .btn {
+  box-sizing: border-box;
+  width: 100%;
   z-index: 10;
   position: absolute;
-  height: 45px;
-  width: 300px;
+  height: 65px;
+  /* width: 300px; */
   top: 30px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  margin-bottom: 70px;
-} 
-.btn {
+  /* margin-bottom: 70px; */
+
   position: relative;
   display: inline-block;
   padding: 0.7em;
-  background: linear-gradient(#fe5f95 , #ff3f7f);
+  background: linear-gradient(#fe5f95, #ff3f7f);
   border: 1px solid #fe3276;
   border-radius: 4px;
   color: #fff;
@@ -31,8 +37,9 @@
   text-align: center;
   font-family: 'M+ Type-1 (general-j) Regular';
   font-size: large;
-  margin-left: 1.5em;
+  /* margin-left: 1.5em; */
 }
+
 .btn::after {
   position: absolute;
   top: 3px;
@@ -43,6 +50,7 @@
   border: 2px dashed #fff;
   border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
 }
+
 /* .btn-flat-vertical-border {
     position: relative;
     display: inline-block;
@@ -65,7 +73,7 @@
   } */
 
 /* .arrow_right{ */
-    /* position: relative;
+/* position: relative;
     display: inline-block;
     padding: 15px 20px 15px 40px;
     color: white;
@@ -87,160 +95,168 @@
     border-radius: 50%;
     background: #ffffff;
 } */
- /* .arrow_right::before {  */
-    /* くの字の表示設定 */
-    /* content: "";
+/* .arrow_right::before {  */
+/* くの字の表示設定 */
+/* content: "";
     margin: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 2px;
     width: 13px; */
-    /* くの字を山なりに見た時、左側の長さ */
-    /* height: 13px; */
-    /* くの字を山なりに見た時、右側の長さ */
-    /* border-top: 3px solid #000; */
-    /* くの字を山なりに見た時、左側の太さと色 */
-    /* border-right: 3px solid #000; */
-    /* くの字を山なりに見た時、右側の太さと色 */
-    /* transform: rotate(45deg); */
-    /* くの字の向き */
+/* くの字を山なりに見た時、左側の長さ */
+/* height: 13px; */
+/* くの字を山なりに見た時、右側の長さ */
+/* border-top: 3px solid #000; */
+/* くの字を山なりに見た時、左側の太さと色 */
+/* border-right: 3px solid #000; */
+/* くの字を山なりに見た時、右側の太さと色 */
+/* transform: rotate(45deg); */
+/* くの字の向き */
 /* } */
 
 /* →の棒部分 */
 /* .arrow_right::after { */
-    /* 棒の表示設定 */
-    /* content: ""; */
-    /* margin: auto; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* left: 1px; */
-    /* width: 18px; */
-    /* 棒の長さ */
-    /* height: 3px; */
-    /* 棒の太さ */
-    /* background: #000; */
-    /* 棒の色 */
+/* 棒の表示設定 */
+/* content: ""; */
+/* margin: auto; */
+/* position: absolute; */
+/* top: 0; */
+/* bottom: 0; */
+/* left: 1px; */
+/* width: 18px; */
+/* 棒の長さ */
+/* height: 3px; */
+/* 棒の太さ */
+/* background: #000; */
+/* 棒の色 */
 /* }  */
 
 /* タイトルのリボン枠 */
-.all_clear{
-    text-align: center;
-    position: relative;
-    padding:3px 0;
-    color:#ffffff;
-    zoom: 1;
-    background: red;
-    -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow:0 1px 3px rgba(0,0,0,0.3);
-    box-shadow:0 1px 3px rgba(0,0,0,0.3);
-    font-family: 'M+ Type-1 (general-j) Regular';
-  }
-  .all_clear:before,
-  .all_clear:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    top:13px;
-    height: 0;
-    width: 0;
-    border: 26px solid red;
-    z-index:-1;
-  }
-  .all_clear:before {
-    right: -42px;
-    border-right-color: transparent;
-  }
-  .all_clear:after {
-    left: -42px;
-    border-left-color: transparent;
-  }
-  .all_clear2:before,.sample2:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    height: 0;
-    width: 0;
-    border: 5px solid transparent;
-    border-top: 5px solid #ba040d;
-  }
-  .all_clear2:before {
-    right: 0;
-    border-left: 5px solid #ba040d;
-  }
-  .all_clear2:after {
-    left: 0;
-    border-right: 5px solid #ba040d;
-  }
-  .all_clear span{
-    display:block;
-    border-top:1px dashed #fff;
-    border-bottom:1px dashed #fff;
-    padding:10px;
-    font-family: 'M+ Type-1 (general-j) Regular';
-  }
+.all_clear {
+  text-align: center;
+  position: relative;
+  padding: 3px 0;
+  color: #ffffff;
+  zoom: 1;
+  background: red;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-family: 'M+ Type-1 (general-j) Regular';
+}
 
-  /*リボン枠ここまで  */
+.all_clear:before,
+.all_clear:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  top: 13px;
+  height: 0;
+  width: 0;
+  border: 26px solid red;
+  z-index: -1;
+}
+
+.all_clear:before {
+  right: -42px;
+  border-right-color: transparent;
+}
+
+.all_clear:after {
+  left: -42px;
+  border-left-color: transparent;
+}
+
+.all_clear2:before,
+.sample2:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #ba040d;
+}
+
+.all_clear2:before {
+  right: 0;
+  border-left: 5px solid #ba040d;
+}
+
+.all_clear2:after {
+  left: 0;
+  border-right: 5px solid #ba040d;
+}
+
+.all_clear span {
+  display: block;
+  border-top: 1px dashed #fff;
+  border-bottom: 1px dashed #fff;
+  padding: 10px;
+  font-family: 'M+ Type-1 (general-j) Regular';
+}
+
+/*リボン枠ここまで  */
 
 .movie_box {
-    width: 100%;
-    height: calc(185px + 100px);
+  width: 100%;
+  height: 235px;
 }
 
 /* フェードインさせる */
 
 .present_box {
-    position: relative;
-    bottom: 30%;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  bottom: 30%;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 
-    opacity: 0;
-    /* ↓秒数はjavaにも記述 */
-    transition: 3.0s;
-    padding-top: 0px;
+  opacity: 0;
+  /* ↓秒数はjavaにも記述 */
+  transition: 3.0s;
+  padding-top: 0px;
 }
 
 
 .present_box.showUp {
-    opacity: 1;
-    padding-top: 100px;
+  opacity: 1;
+  padding-top: 65px;
 }
 
 .present,
 .himawari {
-    position: absolute;
-    width: 100%;
-    transition: 2.0s;
+  position: absolute;
+  width: 100%;
+  transition: 2.0s;
 }
 
 .himawari {
-    opacity: 0;
+  opacity: 0;
 }
 
 .himawari.UP {
-    opacity: 1;
+  opacity: 1;
 }
 
 .present.DOWN {
-    opacity: 0;
-    transition: 1.0s;
+  opacity: 0;
+  transition: 1.0s;
 }
 
 /*ハムスターの吹き出しエリア*/
 .balloon5 {
-    transform-origin: left top;
-    animation: balloonAnime 3s ease-out 0s infinite normal both;
-    width: 100%;
-    margin: 0 0 0 1.5em;
-    overflow: hidden;
-    font-family: 'M+ Type-1 (general-j) Regular';
-  }
-  
-  @keyframes balloonAnime {
-        /*ふわふわゆれる 
+  transform-origin: left top;
+  animation: balloonAnime 3s ease-out 0s infinite normal both;
+  width: 90%;
+  margin: 0 0 0 1.5em;
+  overflow: hidden;
+  font-family: 'M+ Type-1 (general-j) Regular';
+}
+
+@keyframes balloonAnime {
+  /*ふわふわゆれる 
         0% {
           transform:translate(0, 0) rotate(-7deg);
         }
@@ -251,77 +267,86 @@
           transform:translate(0, 0) rotate(7deg);
         } */
 
-        /* ぽよよんとゆれる */
-         0%, 40% {
-            transform: skew(0deg, 0deg);
-          }
-          5% {
-            transform: skew(5deg, 5deg);
-          }
-          10% {
-            transform: skew(-4deg, -4deg);
-          }
-          15% {
-            transform: skew(3deg, 3deg);
-          }
-          20% {
-            transform: skew(-2deg, -2deg);
-          }
-          25% {
-            transform: skew(1deg, 1deg);
-          }
-          30% {
-            transform: skew(-0.6deg, -0.6deg);
-          }
-          35% {
-            transform: skew(0.3deg, 0.3deg);
-          } 
-    
-    
+  /* ぽよよんとゆれる */
+  0%,
+  40% {
+    transform: skew(0deg, 0deg);
   }
-  
-  .balloon5 .faceicon {
-    float: left;
-    margin-right: -90px;
-    width: 87px;
+
+  5% {
+    transform: skew(5deg, 5deg);
   }
-  
-  .balloon5 .faceicon img{
-    width: 125%;
-    height: auto;
-   /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
-   /* border-radius: 50%;*/
-    
+
+  10% {
+    transform: skew(-4deg, -4deg);
   }
-  
-  .balloon5 .chatting {
-    width: 100%;
+
+  15% {
+    transform: skew(3deg, 3deg);
   }
-  
-  .says {
-    display: inline-block;
-    position: relative; 
-    margin: 5px 0 0 105px;
-    padding: 17px 13px;
-    border-radius: 12px;
-    background: #fad5e6;
+
+  20% {
+    transform: skew(-2deg, -2deg);
   }
-  
-  .says:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 18px; 
-    left: -24px;
-    border: 12px solid transparent;
-    border-right: 12px solid #fad5e6;
+
+  25% {
+    transform: skew(1deg, 1deg);
   }
-  
-  .says p {
-    margin: 0;
-    padding: 0;
-    font-family: 'M+ Type-1 (general-j) Regular';
+
+  30% {
+    transform: skew(-0.6deg, -0.6deg);
   }
+
+  35% {
+    transform: skew(0.3deg, 0.3deg);
+  }
+
+
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 87px;
+}
+
+.balloon5 .faceicon img {
+  width: 125%;
+  height: auto;
+  /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
+  /* border-radius: 50%;*/
+
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #fad5e6;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #fad5e6;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+  font-family: 'M+ Type-1 (general-j) Regular';
+}
+
 /* ハムスターエリアここまで */
 
 
