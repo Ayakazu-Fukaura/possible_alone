@@ -45,18 +45,20 @@ body{
 /* ここは見出しエリア */
 
 .context {
-    font-size: 35px;
+    font-size: 40px;
     color: blue;
     writing-mode: vertical-rl;
     position: absolute;
     top: 20px;
-    left: 32%;
+    right: 35%;
 }
 
-.image {
-    position: absolute;
-    left: 180px;
-    bottom: 200px;
+#task_image {
+    position: relative;
+    left: 100px;
+    top: 400px;
+    width: 40%;
+    height: 40%;
 }
 
 /* ここまで */
@@ -87,7 +89,7 @@ body{
 /* solid015 */
 .button_solid015 {
   text-align: center;
-  padding-top: 490px;  /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
+  padding-top: 400px;  /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
   
 }
 .button_solid015 p {
@@ -178,7 +180,7 @@ body{
     /* left: 3px; */
     font-size: 18px;
     top: 70%;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -190,7 +192,7 @@ body{
     /* left: 90px; */
     
     top: 75%;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
