@@ -1,19 +1,20 @@
 $(function () {
 
-    $(".btn").on("click",function () {
+    $(".btn").on("click", function () {
         puresent();
     });
 
-    // // class'showUp'をdiv要素に追加
-    // $('.present_box').addClass('showUp');
+    var name = JSON.parse(storage.getItem("name"));
+    var sexial = JSON.parse(storage.getItem("sexial"));
+    console.log(sexial);
+    if (!name || name == "") {
+        $(".oisii a").text("みんなも<br>しゅっぱつ！！");
 
-    // //4.000秒後に実行
-    // setTimeout(function () {
-    //     $('.himawari').addClass('UP');
-    //     $('.present').addClass('DOWN');
-    // }, 3000);
+    } else {
+        $(".oisii a").html(name + sexial + "も<br>しゅっぱつ！！");
+    }
 
-    // viewStorage();
+
 
 });
 
