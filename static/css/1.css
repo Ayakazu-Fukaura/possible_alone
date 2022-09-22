@@ -1,4 +1,3 @@
-
 /*=============
 .bg_pattern背景
 ==============*/
@@ -13,29 +12,35 @@
   opacity: 0.4;
   z-index: -1;
 }
+
 .Polka {
   background-image: radial-gradient(#ffc107 2px, #ffffff 2px);
   background-size: 20px 20px;
-} 
+}
 
 /*=============
 base
 ==============*/
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
   letter-spacing: .025em;
   line-height: 1.8;
 }
+
 * {
   box-sizing: border-box;
-} 
+}
 
 
- ._a a {
+._a a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +56,7 @@ body {
   transition: .3s;
   position: relative;
 }
+
 ._a a:after {
   content: "";
   position: absolute;
@@ -61,44 +67,56 @@ body {
   border-right: 1px solid #222222;
   border-bottom: 1px solid #222222;
 }
+
 ._a a:hover {
   color: #ffffff;
   background-position: -100% 0;
-} 
+}
 
 /*タイトルの枠*/
 h1 {
-	background-color: #f5d5da; /* 背景色 */
-	border-radius: 5px;
-	color: #ef858c; /* 文字色 */
-	padding: 15px 10px 15px 60px; /* 上・右・下・左の余白 */
-	position: relative;
+  background-color: #f5d5da;
+  /* 背景色 */
+  border-radius: 5px;
+  color: #ef858c;
+  /* 文字色 */
+  padding: 15px 10px 15px 60px;
+  /* 上・右・下・左の余白 */
+  position: relative;
   font-size: 25px;
-	text-shadow: 0px 0px 10px #fff, 0px 0px 6px #fff, 0px 0px 4px #fff, 0 0 0.5px #fff; /* 文字の影 */
+  text-shadow: 0px 0px 10px #fff, 0px 0px 6px #fff, 0px 0px 4px #fff, 0 0 0.5px #fff;
+  /* 文字の影 */
 }
+
 h1:before {
-	content: '＊*'; /*花に見せかけるためのアスタリスク*/
-	color: #fff; /* アスタリスクの色 */
-	display: inline-block;
-	font-size: 30px; /* アスタリスクの大きさ */
-	font-weight: bold;
-	margin-right: 10px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	transform: rotate(20deg);
-	-moz-transform: rotate(20deg);
-	-webkit-transform: rotate(20deg);
-	-o-transform: rotate(20deg);
-	text-shadow: 0px 0px 3px #fff, 0px 0px 2px #fff, 0 0 0.5px #fff; /* アスタリスク周りの影 */
+  content: '＊*';
+  /*花に見せかけるためのアスタリスク*/
+  color: #fff;
+  /* アスタリスクの色 */
+  display: inline-block;
+  font-size: 30px;
+  /* アスタリスクの大きさ */
+  font-weight: bold;
+  margin-right: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  text-shadow: 0px 0px 3px #fff, 0px 0px 2px #fff, 0 0 0.5px #fff;
+  /* アスタリスク周りの影 */
 }
+
 h1:after {
-	border-bottom: 2px dotted #fff; /* 下線 */
-	content: '';
-	position: absolute;
-	bottom: 3px;
-	left: 3px;
-	right: 3px;
+  border-bottom: 2px dotted #fff;
+  /* 下線 */
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
 }
 
 /*日時、曜日の黒板*/
@@ -114,51 +132,69 @@ h1:after {
   box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
   line-height: 2em;
   font-size: 17px;
-  }
-  
-  .kokuban::before,
-  .kokuban::after {
+}
+
+.kokuban::before,
+.kokuban::after {
   position: absolute;
   content: '';
   bottom: 0;
-  } 
-  
-  .kokuban::before {
+}
+
+.kokuban::before {
   right: 10px;
   border: solid 3px #fff;
-  width: 20px; 
+  width: 20px;
   border-radius: 3px 2px 0 2px;
-  }
-  
-  .kokuban::after {
+}
+
+.kokuban::after {
   right: 40px;
   border: solid 3px #ffff6b;
-  width: 15px; 
+  width: 15px;
   border-radius: 8px 5px 2px 5px;
-  }
-  
-  .title {
+}
+
+.title {
   position: absolute;
   top: .8em;
   font-weight: bold;
   font-size: 1.3em;
   color: #ffff6b;
-  }
+}
+
 /*ハムスターの吹き出しエリア*/
 .balloon5 {
   transform-origin: left top;
   animation: balloonAnime 3s ease-out 0s infinite normal both;
-  width: 100%;
+  width: 90%;
   margin: 0 0 0 1.5em;
 }
 
 @keyframes balloonAnime {
-  0% { transform: scale(1); }
-  10% { transform: scale(1.05); }
-  20% { transform: scale(1); }
-  30% { transform: scale(1.02); }
-  40% { transform: scale(1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1.05);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.02);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .balloon5 .faceicon {
@@ -167,12 +203,12 @@ h1:after {
   width: 87px;
 }
 
-.balloon5 .faceicon img{
+.balloon5 .faceicon img {
   width: 125%;
   height: auto;
- /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
- /* border-radius: 50%;*/
-  
+  /* border: solid 3px #d7ebfe;  丸の輪っかをはずした*/
+  /* border-radius: 50%;*/
+
 }
 
 .balloon5 .chatting {
@@ -181,7 +217,7 @@ h1:after {
 
 .says {
   display: inline-block;
-  position: relative; 
+  position: relative;
   margin: 5px 0 0 105px;
   padding: 17px 13px;
   border-radius: 12px;
@@ -192,7 +228,7 @@ h1:after {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 18px; 
+  top: 18px;
   left: -24px;
   border: 12px solid transparent;
   border-right: 12px solid #fad5e6;
@@ -207,6 +243,7 @@ h1:after {
 .button_solid015 {
   text-align: center;
 }
+
 .button_solid015 p {
   margin-bottom: 5px;
   font-weight: 600;
@@ -215,7 +252,9 @@ h1:after {
   display: inline-block;
   position: relative;
 }
-.button_solid015 p:before, .button_solid015 p:after {
+
+.button_solid015 p:before,
+.button_solid015 p:after {
   display: inline-block;
   position: absolute;
   top: 45%;
@@ -225,16 +264,19 @@ h1:after {
   background-color: #10a134;
   content: "";
 }
+
 .button_solid015 p:before {
   left: -30px;
-  -webkit-transform: rotate( 50deg );
-  transform: rotate( 50deg );
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
 }
+
 .button_solid015 p:after {
   right: -30px;
-  -webkit-transform: rotate( -50deg );
-  transform: rotate( -50deg );
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
+
 .button_solid015 a {
   position: relative;
   display: flex;
@@ -247,15 +289,17 @@ h1:after {
   transition: 0.3s ease-in-out;
   font-weight: 600;
   background: #10a134;
-  filter: drop-shadow(0px 2px 4px #ccc); 
+  filter: drop-shadow(0px 2px 4px #ccc);
   border-radius: 50px;
   font-size: x-large;
   text-decoration: none;
 }
+
 .button_solid015 a:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
 }
+
 .button_solid015 a:after {
   position: absolute;
   top: 50%;
@@ -279,6 +323,7 @@ h1:after {
   background-color: pink;
   border-radius: 15px;
 }
+
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
@@ -290,21 +335,26 @@ h1:after {
   background-color: #ffffff;
   position: absolute;
 }
+
 .menu-btn span:before {
   bottom: 8px;
 }
+
 .menu-btn span:after {
   top: 8px;
 }
 
-#menu-btn-check:checked ~ .menu-btn span {
-  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+#menu-btn-check:checked~.menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+  /*メニューオープン時は真ん中の線を透明にする*/
 }
-#menu-btn-check:checked ~ .menu-btn span::before {
+
+#menu-btn-check:checked~.menu-btn span::before {
   bottom: 0;
   transform: rotate(45deg);
 }
-#menu-btn-check:checked ~ .menu-btn span::after {
+
+#menu-btn-check:checked~.menu-btn span::after {
   top: 0;
   transform: rotate(-45deg);
 }
@@ -322,23 +372,27 @@ h1:after {
   z-index: 80;
   background-color: #3584bb;
 }
+
 .menu-content ul {
   padding: 70px 10px 0;
 }
+
 .menu-content ul li {
   border-bottom: solid 1px #ffffff;
   list-style: none;
 }
+
 .menu-content ul li a {
   display: block;
   width: 100%;
   font-size: 15px;
   box-sizing: border-box;
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
   padding: 9px 15px 10px 0;
   position: relative;
 }
+
 .menu-content ul li a::before {
   content: "";
   width: 7px;
@@ -356,12 +410,15 @@ h1:after {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  left: 100%;
+  /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
   background-color: palevioletred;
-  transition: all 0.5s;/*アニメーション設定*/
+  transition: all 0.5s;
+  /*アニメーション設定*/
 }
 
-#menu-btn-check:checked ~ .menu-content {
-  left: 0;/*メニューを画面内へ*/
+#menu-btn-check:checked~.menu-content {
+  left: 0;
+  /*メニューを画面内へ*/
 }
