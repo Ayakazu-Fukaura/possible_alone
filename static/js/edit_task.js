@@ -86,5 +86,26 @@ $(function () {
         } else {
             return 'none.png';
         }
+        if (key == 'ごはん') {
+            return 'gohan.png';
+        }
+        if (key == 'うがいてあらい') {
+            return 'ugai_tearai.png'
+        }
+        if (key == 'かおあらい') {
+            return 'kao.png';
+        }
+        if (key == 'かばんようい') {
+            return 'kaban.png';
+        }
+        if (key == 'はみがき') {
+            return 'hamigaki.png';
+        }
+        if (key == 'かたづけ') {
+            return 'kataduke.png';
+        }
+        if (key == 'ほうこく') {
+            return 'houkoku.png';
+        }
     }
 });
