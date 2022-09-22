@@ -48,7 +48,7 @@ body {
 /* ここは見出しエリア */
 
 .context {
-  font-size: 35px;
+  <<<<<<< HEAD font-size: 35px;
   color: blue;
   writing-mode: vertical-rl;
   position: absolute;
@@ -60,6 +60,21 @@ body {
   position: absolute;
   left: 180px;
   bottom: 200px;
+  =======font-size: 40px;
+  color: blue;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 20px;
+  right: 35%;
+}
+
+#task_image {
+  position: relative;
+  left: 100px;
+  top: 400px;
+  width: 40%;
+  height: 40%;
+  >>>>>>>ea12862d98d646f002172574b10d6a44fa56b84d
 }
 
 /* ここまで */
@@ -90,9 +105,13 @@ body {
 /* solid015 */
 .button_solid015 {
   text-align: center;
-  padding-top: 490px;
+  <<<<<<< HEAD padding-top: 490px;
   /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
 
+  =======padding-top: 400px;
+  /*ほんとは使いたくないけどボタン位置下げるために無理やり指定*/
+
+  >>>>>>>ea12862d98d646f002172574b10d6a44fa56b84d
 }
 
 .button_solid015 p {
@@ -184,6 +203,7 @@ body {
 
 /*ここはタイマーエリア */
 
+
 .timer {
   position: absolute;
   bottom: 150px;
@@ -191,10 +211,42 @@ body {
   /* left: 3px; */
   font-size: 18px;
   top: 70%;
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
+}
+
+.timer2 {
+  position: absolute;
+  /*bottom: 120px;  ほんとは嫌だけどpxサイズ指定でむりやり下げた
+    /* left: 90px; */
+
+  top: 75%;
+  left: 30%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+/*ここまでタイマーエリア */
+
+/* ここは、はなまるエリア */
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s, transform 4s;
+  max-width: 320px;
+  position: absolute;
+  bottom: 270px;
+  right: 2%;
+}
+
+.fade.active {
+  opacity: 1;
+  transform: translateY(0px);
+  >>>>>>>ea12862d98d646f002172574b10d6a44fa56b84d
 }
 
 .timer2 {

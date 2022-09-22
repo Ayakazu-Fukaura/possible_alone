@@ -10,7 +10,9 @@
 .btn {
   z-index: 10;
   position: absolute;
-  width: 240px;
+  height: 45px;
+  width: 300px;
+  top: 30px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -124,6 +126,7 @@
 
 /* タイトルのリボン枠 */
 .all_clear{
+    text-align: center;
     position: relative;
     padding:3px 0;
     color:#ffffff;
@@ -189,7 +192,8 @@
 
 .present_box {
     position: relative;
-    width: 180px;
+    bottom: 30%;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
 
