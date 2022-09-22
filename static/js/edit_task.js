@@ -4,12 +4,16 @@ $(function () {
     // var tasks = [];
     // tasks = [["トイレ", "toilet.png"], ["顔洗い", "kao.png"], ["ごはん", "gohan.png"], ["かばん準備", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
     // setlocalStorage("tasks", tasks);
+    // removeallStorage();
     var i = 0, last_num = 0;
     var all_task = [];
     all_task = JSON.parse(storage.getItem("all_task"));;
     var tasks = [];
     tasks = JSON.parse(storage.getItem("tasks"));
-    if (!tasks) { basic_task(); }
+    if (!tasks || tasks == [] || tasks == "") { basic_task(); }
+    // console.log(!tasks);
+    // viewStorage("tasks");
+    // 
 
 
     //タスクデータがなければ初期化
@@ -19,7 +23,6 @@ $(function () {
     //     console.log("all_taskを初期設定しました");
     // }
     // viewStorage("all_task");
-    // viewStorage("tasks");
 
 
     //タスクリストを表示
