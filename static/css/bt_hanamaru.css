@@ -246,8 +246,9 @@ body {
   /*bottom: 120px;  ほんとは嫌だけどpxサイズ指定でむりやり下げた
     /* left: 90px; */
 
-  top: 75%;
-  left: 50%;
+  /* top: 75%; */
+  /* left: 50%; */
+  display: inline;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
