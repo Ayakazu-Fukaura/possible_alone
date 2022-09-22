@@ -78,14 +78,6 @@ $(function () {
 
     })
     function illust(key) {
-        if (key == 'きがえ') {
-            return 'kigae.png';
-        }
-        if (key == 'トイレ') {
-            return 'toilet.png';
-        } else {
-            return 'none.png';
-        }
         if (key == 'ごはん') {
             return 'gohan.png';
         }
@@ -107,6 +99,15 @@ $(function () {
         if (key == 'ほうこく') {
             return 'houkoku.png';
         }
+        if (key == 'きがえ') {
+            return 'kigae.png';
+        }
+        if (key == 'トイレ') {
+            return 'toilet.png';
+        } else {
+            return 'none.png';
+        }
+
     }
     function basic_task() {
         tasks = [["トイレ", "toilet.png"], ["かおあらい", "kao.png"], ["ごはん", "gohan.png"], ["かばんようい", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
