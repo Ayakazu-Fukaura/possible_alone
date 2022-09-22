@@ -23,6 +23,8 @@ a {
 }
 .button_solid015 {
     text-align: center;
+    position: relative;
+    top: 380px;
   }
   
   .button_solid015 p {
@@ -94,8 +96,9 @@ a {
 
 
   .img {
-    position: relative;
-    top: 43px;
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
   }
 
   /* ここまで */
