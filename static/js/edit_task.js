@@ -4,7 +4,7 @@ $(function () {
     // var tasks = [];
     // tasks = [["トイレ", "toilet.png"], ["顔洗い", "kao.png"], ["ごはん", "gohan.png"], ["かばん準備", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
     // setlocalStorage("tasks", tasks);
-    var i = 0;
+    var i = 0, last_num = 0;
     var all_task = [];
     all_task = JSON.parse(storage.getItem("all_task"));;
     var tasks = [];
@@ -34,6 +34,7 @@ $(function () {
     for (i = 0; i < tasks.length - 1; i++) {
         $('#yazirusi').append('<img src="/static/img/pink_yajirusi.png" alt="矢印">');
     }
+    console.log("i=" + i);
     // $('.content').append('<div>' + tasks[0][0] + '</div>');
     // for (let i = 1; i < tasks.length; i++) {
     //     $('.content').append('<img src="/static/img/pink_yajirusi.png" alt="写真"><div>' + tasks[i][0] + '</div>');
@@ -44,4 +45,40 @@ $(function () {
     Sortable.create(content, {
         animation: 150,
     });
+
+    // 新しいタスクを保存
+    $('#submit').click(function () {
+        var target = $('#content').children();
+        tasks = [];
+        console.log("ながさ:" + target.length);
+        for (i = 0; i < target.length; i++) {
+            tasks.push([target.eq(i).text(), ".jpg"]);
+        }
+        setlocalStorage("tasks", tasks);
+        // console.log("tasks:" + tasks);
+    });
+
+    // リセット
+    $('#reset').click(function () {
+        $('#content').empty();
+        $('#yazirusi').empty();
+    })
+
+    $('button').click(function () {
+        var select_alt = $(this).children().attr('alt');
+        // console.log(select_alt);
+        if ($('#content').children().length != 0) {
+            $('#yazirusi').append('<img src="/static/img/pink_yajirusi.png" alt="矢印">');
+        }
+        $('#content').append('<div>' + select_alt + '</div>');
+
+    })
+    function illust(key) {
+        if (key == 'きがえ') {
+            return 'kigae.png';
+        }
+        if (key == 'トイレ') {
+            return 'toilet.png';
+        }
+    }
 });
