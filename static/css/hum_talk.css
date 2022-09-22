@@ -1,80 +1,91 @@
 @charset "utf-8";
 
-body{
-    font-family: "Helvetica Neue",
+html,
+body {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",
     Arial,
     "Hiragino Kaku Gothic ProN",
     "Hiragino Sans",
     Meiryo,
     sans-serif;
+  height: 100%;
 }
 
 /* ここはハムスターありがとうエリア */
 
 
 .balloon5 {
-    width: 100%;
-    margin: 1.5em 0;
-    overflow: hidden;
-    margin-left: 0;
-    color: black;
-    position: absolute;
-    bottom: 90px;
-    
-  }
-  
-  .balloon5 .faceicon {
-    float: left;
-    margin-right: -90px;
-    width: 90px;
-  }
-  
-  .balloon5 .faceicon img{
-    width: 100%;
-    height: auto;
-   /* border: solid 3px #d7ebfe;
-    border-radius: 50%;*/
-  }
-  
-  .balloon5 .chatting {
-    width: 100%;
-  }
-  
-  .says {
-    display: inline-block;
-    position: relative; 
-    margin: 5px 0 0 105px;
-    padding: 17px 13px;
-    border-radius: 12px;
-    background:#fad5e6;
-    font-size: 14px;
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+  margin-left: 0;
+  color: black;
+  position: absolute;
+  bottom: 90px;
 
-    opacity: 0;   /* いったん非表示 */
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 90px;
+}
+
+.balloon5 .faceicon img {
+  width: 100%;
+  height: auto;
+  /* border: solid 3px #d7ebfe;
+    border-radius: 50%;*/
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #fad5e6;
+  font-size: 14px;
+
+  opacity: 0;
+  /* いったん非表示 */
   visibility: hidden;
   transform: translateY(40px);
   transition: all 1s;
-  }
+}
 
-  .says.is-show {
-    opacity: 1;
+.says.is-show {
+  opacity: 1;
   visibility: visible;
   transform: translateY(0px);
-  }
-  
-  .says:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 18px; 
-    left: -24px;
-    border: 12px solid transparent;
-    border-right: 12px solid #fad5e6;
-  }
-  
-  .says p {
-    margin: 0;
-    padding: 0;
-  }
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #fad5e6;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
 
 /* .btn { 
     padding-left: 45%;
@@ -84,15 +95,20 @@ body{
 */
 
 .goodjob {
-    color: red;
-    position: fixed;
-    top: 320px;
-    left: 30%;
+  color: red;
+  position: fixed;
+  top: 320px;
+  left: 30%;
 }
+
 /* ボタン */
 .button_solid015 {
   text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
+
 .button_solid015 p {
   margin-bottom: 5px;
   font-weight: 600;
@@ -101,7 +117,9 @@ body{
   display: inline-block;
   position: relative;
 }
-.button_solid015 p:before, .button_solid015 p:after {
+
+.button_solid015 p:before,
+.button_solid015 p:after {
   display: inline-block;
   position: absolute;
   top: 45%;
@@ -111,16 +129,19 @@ body{
   background-color: #10a134;
   content: "";
 }
+
 .button_solid015 p:before {
   left: -30px;
-  -webkit-transform: rotate( 50deg );
-  transform: rotate( 50deg );
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
 }
+
 .button_solid015 p:after {
   right: -30px;
-  -webkit-transform: rotate( -50deg );
-  transform: rotate( -50deg );
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
+
 .button_solid015 a {
   position: relative;
   display: flex;
@@ -137,10 +158,12 @@ body{
   border-radius: 50px;
   font-size: x-large;
 }
+
 .button_solid015 a:hover {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
 }
+
 .button_solid015 a:after {
   position: absolute;
   top: 50%;
@@ -152,4 +175,4 @@ body{
 }
 
 
- /* ここまでハムスターありがとうエリア */
+/* ここまでハムスターありがとうエリア */

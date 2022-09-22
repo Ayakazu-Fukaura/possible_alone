@@ -51,6 +51,12 @@ if (typeof sessionStorage === 'undefined') {
         storage.clear();
         viewStorage();
     }
+
+    function basic_task() {
+        tasks = [["トイレ", "toilet.png"], ["かおあらい", "kao.png"], ["しょくじ", "gohan.png"], ["かばんようい", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
+        setlocalStorage("tasks", tasks);
+        console.log("tasksを初期設定しました");
+    }
 }
 
 

@@ -51,14 +51,16 @@ $(function () {
         var target = $('#content').children();
         tasks = [];
         // console.log("ながさ:" + target.length);
-        if (target.length == 0) {
 
-        }
         for (i = 0; i < target.length; i++) {
             tasks.push([target.eq(i).text(), illust(target.eq(i).text())]);
         }
         setlocalStorage("tasks", tasks);
-        console.log("tasks:" + tasks);
+        // console.log("tasks:" + tasks);
+
+        if (target.length == 0) {
+            basic_task();
+        }
     });
 
     // リセット
@@ -78,7 +80,7 @@ $(function () {
 
     })
     function illust(key) {
-        if (key == 'ごはん') {
+        if (key == 'しょくじ') {
             return 'gohan.png';
         }
         if (key == 'うがいてあらい') {
@@ -109,9 +111,5 @@ $(function () {
         }
 
     }
-    function basic_task() {
-        tasks = [["トイレ", "toilet.png"], ["かおあらい", "kao.png"], ["ごはん", "gohan.png"], ["かばんようい", "kaban.png"], ["はみがき", "hamigaki.png"], ["トイレ", "toilet.png"]];
-        setlocalStorage("tasks", tasks);
-        console.log("tasksを初期設定しました");
-    }
+
 });
