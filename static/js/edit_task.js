@@ -81,7 +81,7 @@ $(function () {
     })
     function illust(key) {
         if (key == 'しょくじ') {
-            return 'gohan.png';
+            return 'gohan_non.png';
         }
         if (key == 'うがいてあらい') {
             return 'ugai_tearai.png';
@@ -99,7 +99,7 @@ $(function () {
             return 'kataduke.png';
         }
         if (key == 'ほうこく') {
-            return 'houkoku.png';
+            return 'houkoku_non.png';
         }
         if (key == 'きがえ') {
             return 'kigae.png';
