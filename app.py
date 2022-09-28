@@ -1,5 +1,5 @@
 from email.mime import image
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
@@ -9,6 +9,11 @@ def testpage():
     # 実験用のページです（深浦
     return render_template('test.html')
 # #######################
+
+
+@app.route('/')
+def home():
+    return redirect('/1')
 
 
 @app.route('/0')
