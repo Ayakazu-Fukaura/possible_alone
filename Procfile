@@ -1,1 +1,1 @@
-web:  gunicorn  possible_alone:hitoridedekirumonn  --log-file=-
+web:  gunicorn  possible_alone:possiblealone  --log-file=-
